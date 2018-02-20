@@ -1,0 +1,61 @@
+/* This is some default styling for the exercise */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.block {
+    -webkit-flex: 1 0 15em;
+    -ms-flex: 1 0 15em;
+    flex: 1 0 15em;
+}
+
+.container .block {
+    height: 200px;
+}
+
+.container .block p {
+    padding: 0.5rem;
+}
+
+.container .block:nth-of-type(even) {
+    background-color: #333;
+}
+
+.container .block:nth-of-type(even) p {
+    color: white;
+}
+
+.container .block:nth-of-type(odd) {
+    background-color: #AAA;
+}
+
+
+@media (min-width: 30em) {
+    .block:nth-child(5) {
+        -webkit-order: -1;
+        -ms-order: -1;
+        order: -1;
+    }
+    /*Source: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items*/
+}
+
+/*Source for flexbox: IAT 339: 03 - Grids - Completed.zip*/
+
+
+.col-1-of-2 {
+    -webkit-flex: 1 1 40%;
+    -ms-flex: 1 1 40%;
+    flex: 1 1 40%;
+    margin: 0 2rem
+}
