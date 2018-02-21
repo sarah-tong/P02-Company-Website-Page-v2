@@ -6,11 +6,16 @@ Default styling for the style guide
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: #eaf1f7;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 p {
+    font-size: 0.75rem;
     line-height: 1.5rem;
+}
+
+p:not(:first-child) {
+    margin-top: 1.5rem;
 }
 
 /*
@@ -27,12 +32,24 @@ margin-top: 5rem;
 }
 */
 
+section:not(:first-child) {
+    margin-top: 6rem;
+}
+
+section:nth-child(2) {
+    margin-top: -1rem;
+}
+
 section h3 {
     margin: 0;
 }
 
 section p {
     margin-top: 0;
+}
+
+section .content {
+    margin: 1rem 7rem 0;
 }
 
 nav a:hover,
@@ -54,6 +71,7 @@ INTERACTIVE ELEMENTS -------------------
 /* Styling for in-text link */
 
 .in-text-link {
+    font-size: 0.75rem;
     text-decoration: none;
     color: #3057D5;
     transition: color 0.5s;
@@ -178,10 +196,12 @@ code span {
 .cta-button {
     position: relative;
     display: inline-block;
+    min-width: 9rem;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.0625rem;
     padding: 0.5rem;
+    text-align: center;
     color: #3057D5;
     border: 2px solid #3057D5;
 }
@@ -205,6 +225,39 @@ code span {
 .cta-button:hover:after {
     top: 0;
     height: 100%;
+}
+
+.see-more-button {
+    display: block;
+    position: relative;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 10rem;
+    border: 2px white solid;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.see-more-button img {
+    position: absolute;
+    width: 1rem;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.see-more-button:hover {
+    background: #3057D5;
+    transition: background 0.5s;
+}
+
+.jump-down-button {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
 }
 
 /* Styling for text input field */
@@ -239,13 +292,36 @@ h1 {
 h2 {
     font-size: 2.5rem;
     color: #3057D5;
+    text-align: center;
 }
 
 h3 {
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     color: #102c34;
     font-weight: 100;
     margin: 0;
+}
+
+h4 {
+    font-size: 1.5625rem;
+    color: #102c34;
+    margin: 0;
+}
+
+.banner-header-underline {
+    display: block;
+    width: 6rem;
+    height: 0.25rem;
+    background-color: white; 
+}
+
+.header-underline {
+    display: block;
+    position: relative;
+    background: #3057D5;
+    height: 0.25rem;
+    width: 6rem;
+    top: -1.5rem;
 }
 
 /* Styling for bulleted lists */
@@ -329,10 +405,22 @@ COMBINED ELEMENTS -------------------
 /* Website grid */
 
 .grid-wrapper {
-    display: inline-flex;
-    width: 100%;
+    display: flex;
     margin-bottom: 1rem;
-    flex-wrap: wrap;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.column-1-of-2 {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+
+.column-1-of-3 {
+    -webkit-flex: 1 1 30%;
+    -ms-flex: 1 1 30%;
+    flex: 1 1 30%;
 }
 
 .column-1-of-4 {
@@ -414,48 +502,13 @@ COMBINED ELEMENTS -------------------
 }
 
 .hero-text {
+    text-align: left;
     color: white;
     margin: 0 0 2rem 0;
 }
 
-.main-banner .banner-text span {
-    display: block;
-    width: 7rem;
-    height: 0.25rem;
-    background-color: white;
-}
-
 .main-banner .banner-text p {
     margin-top: 2rem;
-}
-
-.jump-down-button {
-    display: block;
-    position: absolute;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 10rem;
-    border: 2px white solid;
-    margin: 0 auto;
-    bottom: 10%;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.jump-down-button img {
-    position: absolute;
-    width: 1rem;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.jump-down-button:hover {
-    background: #3057D5;
-    transition: background 0.5s;
 }
 
 .hero-bottom-text {
@@ -490,6 +543,153 @@ COMBINED ELEMENTS -------------------
     text-align: center;
 }
 
+
+/* homepage */
+#carbon-difference img {
+    width: 100%;
+}
+
+#carbon-difference .column-1-of-2:first-child {
+    padding-right: 1rem;
+    flex: 1 1 40%;
+}
+
+#carbon-difference .column-1-of-2:nth-child(2) {
+    align-self: center;
+    flex: 1 1 60%;
+}
+
+.header-underline {
+    margin: 0 auto;
+}
+
+#carbon-difference .cta-button {
+    margin-top: 1rem;
+}
+
+.systems-computer-img {
+    width: 100%;
+    margin: 3rem 0 1rem 0;
+}
+
+#systems h4{
+    text-align: center;
+}
+
+#systems .column-1-of-3 {
+    border: 1px solid black;
+}
+
+#systems .column-1-of-3:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+#systems p {
+    margin: 1rem 0 1.5rem 0 ;
+}
+
+#systems .panel-wrapper {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.clickable-panel {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.no-interaction {
+    padding: 2rem;
+    z-index: 9;
+    opacity: 1;
+    transition: opacity 0.5s;
+    background: white;
+}
+
+.no-interaction:hover {
+    opacity: 0;
+}
+
+.hover-state {
+    position: absolute;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    color: white;
+}
+
+.hover-state h4 {
+    color: white;
+}
+
+#systems .panel-hover-image {
+    position: absolute;
+    max-height: 100%;
+    min-width: 100%;
+    z-index: -3;
+    top: 0;
+    left: 0;
+}
+
+#latest-news .column-1-of-2:first-child {
+    padding-right: 1rem;
+    flex: 1 1 40%;  
+}
+
+#latest-news .column-1-of-2:nth-child(2) {
+    padding-right: 1rem;
+    flex: 1 1 60%;  
+}
+
+#latest-news .cta-button {
+    display: block;
+    width: 9rem;
+    margin: 1rem auto 0; 
+}
+
+#news2 {
+    margin: 4rem 0;
+}
+
+#social-media .grid-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#social-media .column-1-of-2 {
+    display: flex;
+    flex: 1 1 50%;
+}
+
+.social-media-img-wrapper {
+    display: block;
+    position: relative;
+    max-width: 11vw;
+    max-height: 11vw;
+    overflow: hidden;
+}
+
+.column-1-of-2 .social-media-img-wrapper:first-child {
+    margin-right: 1rem;
+}
+
+.social-media-img-wrapper img {
+    height: 100%;
+}
+
+.social-media-img-center-wrapper {
+    max-width: 22vw;
+    max-height: 22vw;
+    overflow: hidden;
+}
 
 /* product page */
 
@@ -616,6 +816,12 @@ COMBINED ELEMENTS -------------------
     height: 15rem;
 }
 
+@media (min-width: 1281px) {
+    p, .in-text-link {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 1095px) {
     .hero-bottom-text {
         bottom: 14%;
@@ -625,6 +831,31 @@ COMBINED ELEMENTS -------------------
 @media (max-width: 873px) {
     .main-banner .banner-text {
         top: 30%;
+    }
+
+    #carbon-difference .grid-wrapper, #systems .grid-wrapper {
+        flex-direction: column;
+    }
+
+    #carbon-difference .column-1-of-2:nth-child(2) {
+        order: -1;
+    }
+
+    #carbon-difference .cta-button {
+        display: block;
+        margin: 2rem auto;
+    }
+
+    #systems .column-1-of-3 {
+        margin: 0 0 1rem 0;
+    }
+
+    #systems .column-1-of-3:not(:last-child) {
+        margin-right: 0;
+    }
+
+    #social-media .grid-wrapper {
+        flex-direction: column;
     }
 }
 
@@ -637,7 +868,7 @@ COMBINED ELEMENTS -------------------
     .main-banner .banner-text p {
         margin-top: 1rem;
     }
-    
+
     .hero-bottom-text {
         bottom: 9%;
     }
@@ -684,7 +915,7 @@ COMBINED ELEMENTS -------------------
         margin: 0 2.5rem;
     }
 
-    .main-banner .banner-text span {
+    .banner-header-underline {
         width: 5rem;
         height: 0.15rem;
     }
@@ -758,4 +989,32 @@ COMBINED ELEMENTS -------------------
 #schedule-call {
     text-align: center;
 
+}
+
+/* footer */
+footer {
+    margin-top: 3rem;
+    background-color: #3057D5;
+}
+
+footer nav, footer nav ul {
+    display: inline-flex;
+    width: 100%;
+    height: 4.5rem;
+}
+
+footer nav li, footer nav li:nth-child(5) {
+    font-size: 0.5rem;
+    color: white;
+    flex: 1 1 auto;
+    text-align: center;
+    align-self: flex-end;
+}
+
+footer nav img {
+    width: 1rem;
+}
+
+footer nav li:nth-child(4) {
+    flex: 50 0 auto;
 }
