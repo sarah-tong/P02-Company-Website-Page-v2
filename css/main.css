@@ -35,7 +35,7 @@ section:not(:first-child) {
     margin-top: 6rem;
 }
 
-    section:nth-child(2) {
+section:nth-child(2) {
     margin-top: -1rem;
 }
 
@@ -89,14 +89,7 @@ nav ul {
     padding: 0;
 }
 
-nav li {
-    display: inline-block;
-    margin: 0;
-    /*    background: #3057D5;*/
-    padding: 1rem;
-}
-
-nav li:nth-child(4) {
+#main-nav nav li:nth-child(4) {
     font-size: 1.75rem;
 }
 
@@ -130,6 +123,8 @@ nav li:nth-child(4) {
 nav img {
     width: 1.5rem;
 }
+
+/* mobile nav */
 
 /* Styling for Product Information Accordian */
 
@@ -345,6 +340,11 @@ COMBINED ELEMENTS -------------------
     align-items: center;
     z-index: 9;
     /*    background: #3057D5;*/
+}
+
+#main-nav ul,
+footer ul {
+    list-style: none;
 }
 
 #main-nav li {
@@ -718,7 +718,7 @@ transition: opacity 0.5s;
     height: auto;
 }
 
-#gaming-wrapper .content{
+#gaming-wrapper .content {
     margin: 3rem 15rem 0;
 }
 
@@ -886,7 +886,7 @@ transition: opacity 0.5s;
         bottom: 14%;
     }
 
-    #gaming-wrapper .content{
+    #gaming-wrapper .content {
         margin: 3rem 7rem 0;
     }
 }
@@ -931,7 +931,7 @@ transition: opacity 0.5s;
         margin-bottom: 0;
     }
 
-    #gaming-wrapper .column-1-of-2:first-child  {
+    #gaming-wrapper .column-1-of-2:first-child {
         margin-right: 0;
     }
 }
@@ -980,7 +980,7 @@ transition: opacity 0.5s;
         margin-bottom: 2rem;
     }
 
-    #gaming-wrapper .column-1-of-2:first-child  {
+    #gaming-wrapper .column-1-of-2:first-child {
         margin-right: 0;
     }
 }
@@ -1031,7 +1031,7 @@ transition: opacity 0.5s;
         margin: 1rem 2.5rem 0;
     }
 
-    #gaming-wrapper .content{
+    #gaming-wrapper .content {
         margin: 3rem 2.5rem 0;
     }
 }
@@ -1115,11 +1115,13 @@ footer nav ul {
 
 footer nav li,
 footer nav li:nth-child(5) {
+    position: relative;
     font-size: 0.5rem;
     color: white;
     flex: 1 1 auto;
     text-align: center;
     align-self: flex-end;
+    bottom: 1rem;
 }
 
 footer .button-nav {
@@ -1133,4 +1135,194 @@ footer nav img {
 
 footer nav li:nth-child(4) {
     flex: 50 0 auto;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width:700px) {
+    
+    #main-nav {
+        visibility: hidden;
+    }
+
+    #mobile-nav {
+        position: absolute;
+        display: block;
+        top: 0;
+    }
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        z-index: 10;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        /*         hide this */
+        z-index: 12;
+        /* and place it over the hamburger */
+    }
+
+    /*
+ * Just a quick hamburger
+ */
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: white;
+        border-radius: 3px;
+        z-index: 10;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    /*
+ * But let's hide the middle one.
+ */
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #3057D5;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    /*
+ * And let's slide it in from the left
+ */
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+}
+
+
+/*animated search*/
+
+input {
+    outline: none;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+/*Search Bar Base*/
+
+input[type=search] {
+    background: transparent url(../img/icons/magnifying-glass-icon.svg) no-repeat 9px center;
+    background-size: 50%;
+    background-position: center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+
+    border-radius: 10em;
+    transition: all .5s;
+}
+
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #3057D5;
+
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+
+/* Search Icon*/
+
+#search-icon input[type=search] {
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+}
+
+#search-icon input[type=search]:hover {
+    background-color: transparent;
+    background: transparent url(../img/icons/magnifying-glass-icon-vividblue.svg) no-repeat 9px center;
+    background-size: 50%;
+    background-position: center;
+}
+
+#search-icon input[type=search]:focus {
+    background: transparent url(../img/icons/magnifying-glass-icon-vividblue.svg) no-repeat 9px center;
+    background-size: 10%;
+    background-position: 5% 50%;
+    width: 130px;
+    padding-left: 32px;
+    color: #000;
+    background-color: white;
+    cursor: auto;
 }

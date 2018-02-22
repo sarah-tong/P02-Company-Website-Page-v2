@@ -8,9 +8,11 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
+
     <nav id="main-nav">
         <ul>
             <li>
@@ -30,9 +32,9 @@
             </li>
 
             <li>
-                <a href="search.html" class="button-nav">
-                        <img src="img/icons/magnifying-glass-icon.svg" alt="search icon">
-                    </a>
+                <form id="search-icon">
+                    <input type="search">
+                </form>
             </li>
 
             <li>
@@ -44,9 +46,58 @@
             <li>
                 <a href="about.html" class="button-nav">about</a>
             </li>
-            
+
         </ul>
     </nav>
+
+    <nav id="mobile-nav" role="navigation">
+        <div id="menuToggle">
+
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <li>
+                    <a href="gaming.html" class="button-nav">gaming</a>
+                </li>
+
+                <li>
+                    <a href="work.html" class="button-nav">work</a>
+                </li>
+
+                <li>
+                    <a href="home.html" class="button-nav">home</a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="button-nav">carbon.co</a>
+                </li>
+
+                <li>
+                    <a href="search.html" class="button-nav">
+                        <img src="img/icons/magnifying-glass-icon.svg" alt="search icon">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="chat.html" class="button-nav">
+                        <img src="img/icons/customer-service.svg" alt="speech bubble icon">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="button-nav">about</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
 
     <div id="homepage-wrapper">
         <section class="main-banner">
@@ -180,6 +231,7 @@
             </div>
         </section>
 
+        <!--
         <section id="social-media">
             <div class="content">
                 <div class="grid-wrapper">
@@ -227,6 +279,7 @@
                 </div>
             </div>
         </section>
+-->
 
         <footer>
             <nav>
@@ -272,5 +325,7 @@
     </div>
 
 </body>
+
+
 
 </html>
