@@ -1206,7 +1206,6 @@ transition: opacity 0.5s;
 
 }
 
-
 @media (max-width: 767px) {
     .hero-text {
         margin: 0 0 1rem 0;
@@ -1252,6 +1251,14 @@ transition: opacity 0.5s;
 
     #gaming-wrapper .column-1-of-2:first-child, #work-wrapper .column-1-of-2:first-child, #home-wrapper .column-1-of-2:first-child {
         margin-right: 0;
+    }
+
+    footer nav, footer nav ul {
+        display: block;
+    }
+
+    footer nav li:not(:nth-child(4)) {
+        display: block;
     }
 }
 
@@ -1637,11 +1644,4 @@ code span {
 
 .key-point-content ul li {
     margin-top: 1rem;
-}
-
-
-@media (max-width: 767px) {
-    .key-point-img {
-        margin-top: 2rem;
-    }
 }
