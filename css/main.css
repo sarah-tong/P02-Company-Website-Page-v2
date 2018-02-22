@@ -506,6 +506,7 @@ transition: opacity 0.5s;
     max-width: 31rem;
     color: white;
     margin: 0 7rem 0 7rem;
+    z-index: 3;
 }
 
 .hero-text {
@@ -705,15 +706,24 @@ transition: opacity 0.5s;
 
 /* product listing page */
 
-/*
-#gaming-wrapper .grid-wrapper {
-flex-wrap: no-wrap;
+.banner-comp-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 1rem;
+    margin: 5rem 4rem 0 0;
+    width: 50%;
+    height: auto;
 }
-*/
+
+#gaming-wrapper .content{
+    margin: 3rem 15rem 0;
+}
 
 #gaming-wrapper .column-1-of-2 {
     margin-bottom: 2rem;
 }
+
 #gaming-wrapper .column-1-of-2:first-child  {
     margin-right: 3rem;
 }
@@ -725,6 +735,17 @@ flex-wrap: no-wrap;
 
 .product-listing h4, .product-listing p {
     text-align: center;
+    margin: 0;
+}
+
+.rating {
+    color: #3057D5;
+}
+
+.product-listing .price {
+    margin-top: 2rem;
+    font-size: 1.5625rem;
+    font-weight: 200;
 }
 
 .product-page .main-banner h1,
@@ -860,6 +881,10 @@ flex-wrap: no-wrap;
     .hero-bottom-text {
         bottom: 14%;
     }
+
+    #gaming-wrapper .content{
+        margin: 3rem 7rem 0;
+    }
 }
 
 @media (max-width: 873px) {
@@ -896,6 +921,14 @@ flex-wrap: no-wrap;
     #social-media .grid-wrapper {
         flex-direction: column;
     }
+
+    #gaming-wrapper .column-1-of-2 {
+        margin-bottom: 0;
+    }
+
+    #gaming-wrapper .column-1-of-2:first-child  {
+        margin-right: 0;
+    }
 }
 
 
@@ -929,6 +962,22 @@ flex-wrap: no-wrap;
     p {
         font-size: 0.75rem;
     }
+
+    #gaming-wrapper .grid-wrapper {
+        flex-direction: column;
+    }
+
+    #gaming-wrapper .grid-wrapper {
+        margin-bottom: 0;
+    }
+
+    #gaming-wrapper .column-1-of-2 {
+        margin-bottom: 2rem;
+    }
+
+    #gaming-wrapper .column-1-of-2:first-child  {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 620px) {
@@ -940,7 +989,6 @@ flex-wrap: no-wrap;
 @media (max-width: 582px) {
     .main-banner {
         height: 22rem;
-        overflow: hidden;
     }
 
     .home-hero-image {
@@ -966,8 +1014,20 @@ flex-wrap: no-wrap;
         border: 1px solid white;
     }
 
+    .banner-comp-img {
+        width: 21rem;
+        margin-right: 0;
+        left: 0;
+        right: 0;
+        margin: 5rem auto;
+    }
+
     section .content {
         margin: 1rem 2.5rem 0; 
+    }
+
+    #gaming-wrapper .content{
+        margin: 3rem 2.5rem 0;
     }
 }
 
