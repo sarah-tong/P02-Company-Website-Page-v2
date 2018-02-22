@@ -259,17 +259,48 @@ code span {
 .input-field-label {
     display: block;
     font-weight: 700;
-    margin-bottom: 0.25rem;
+    margin: 1rem 0;
 }
 
-#text-input-field {
+.text-input-field {
     display: block;
+    width: 100%;
     font-size: 1rem;
-    padding: 0.15rem;
-    border: 1px solid;
+    padding: 0.5rem;
+    border: 1px solid black;
     color: #899da3;
+    font-style: italic;
 }
 
+.select-field {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    height: 2.25rem;
+    border: 1px solid black;
+    color: black;
+}
+
+label, input, select {
+    display: block;
+    border-radius: 0;
+}
+
+.cta-button input {
+    display: inline-block;
+    min-width: 9rem;
+    font-weight: 700;
+    letter-spacing: 0.0625rem;
+    text-align: center;
+    background: none;
+    padding: 0.5rem;
+    border: none;
+    color: #3057D5;
+}
+
+.cta-button input:hover {
+    color: white;
+}
 
 /* 
 TEXT ELEMENTS -------------------
@@ -300,6 +331,7 @@ h4 {
     font-size: 1.5625rem;
     color: #102c34;
     margin: 0;
+    font-weight: bold;
 }
 
 .banner-header-underline {
@@ -788,6 +820,128 @@ transition: opacity 0.5s;
     max-height: 33rem;
 }
 
+/* purchase form */
+
+.purchase-progress {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.purchase-progress h4 {
+    display: inline-block;
+    font-weight: 100;
+    color: #899da3;
+}
+
+.purchase-progress .progress-active {
+    font-weight: bold;
+    color: #102c34;
+}
+
+.progress-seperator {
+    display: inline-block;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+}
+
+.progress-seperator span {
+    display: block;
+    position: absolute;
+    background: #899da3;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0.1rem;
+}
+
+#purchase-form-ship-wrapper .grid-wrapper .column-1-of-3:not(:nth-child(3)) {
+    flex: 1 1 90%;
+    margin-right: 2rem;
+}
+
+#purchase-form-ship-wrapper .back {
+    color: #899da3;
+    border: 2px solid #899da3;
+}
+
+#purchase-form-ship-wrapper .back:hover:after {
+    height: 0%;
+}
+
+.purchase-form .column-1-of-3:not(:nth-child(3)) {
+    margin-right: 2rem;
+}
+
+.purchase-form .grid-wrapper {
+    border: 1px solid #eaf1f7;
+    padding: 2rem;
+    margin: 1rem 0 2rem;
+}
+
+.purchase-form .input-field-label:first-child {
+    margin-top: 0;
+}
+
+.clear {
+    padding: 0; 
+}
+
+.purchase-form .input-wrapper {
+    display: flex;
+}
+
+.input-wrapper .column-1-of-3:nth-child(1) {
+    text-align: left;
+}
+
+.input-wrapper .column-1-of-3:nth-child(2) {
+    text-align: center;
+}
+
+.input-wrapper .column-1-of-3:last-child {
+    text-align: right;
+}
+
+#purchase-form-pay-wrapper .purchase-form .column-1-of-3:not(:nth-child(2)) {
+    flex: 1 1 60%;
+}
+
+#form-expiry, #form-year {
+    display: inline-block;
+    width: auto;
+}
+
+.order-details {
+    max-width: 100%;
+}
+
+.order-details .panel-wrapper {
+    max-width: 50%;
+    margin: 1rem auto;
+    padding: 0 2.5rem 1.5rem;
+    border: 1px solid #eaf1f7;
+}
+
+.order-details h4, .order-details p {
+    text-align: center;
+}
+
+.order-details p {
+    margin: 1rem 0 3rem 0;
+}
+
+#purchase-form-confirm-wrapper .input-wrapper {
+    display: block;
+    text-align: center;
+}
+
 
 /*Grid Test*/
 
@@ -901,13 +1055,23 @@ transition: opacity 0.5s;
     }
 }
 
+@media (max-width: 931px) {
+    #form-expiry, #form-year {
+        display: block;
+        width: 100%;
+    }
+
+    #form-expiry {
+        margin-bottom: 0.5rem;
+    }
+}
+
 @media (max-width: 873px) {
     .main-banner .banner-text {
         top: 30%;
     }
 
-    #carbon-difference .grid-wrapper,
-    #systems .grid-wrapper {
+    #carbon-difference .grid-wrapper, #systems .grid-wrapper, .purchase-form .grid-wrapper {
         flex-direction: column;
     }
 
@@ -941,9 +1105,31 @@ transition: opacity 0.5s;
         margin-bottom: 0;
     }
 
-    #gaming-wrapper .column-1-of-2:first-child {
-        margin-right: 0;
+    #gaming-wrapper .column-1-of-2:first-child  {
+        margin-right: 1rem;
     }
+
+    .purchase-form .grid-wrapper {
+        padding: 2rem;
+    }
+
+    .purchase-form .column-1-of-3{
+        width: 100%;
+    }
+
+    .purchase-form .column-1-of-3:not(:nth-child(3)) {
+        margin-bottom: 1rem;
+    }
+
+    .input-wrapper .column-1-of-3, input-wrapper .column-1-of-3:last-child {
+        text-align: center !important;
+    }
+
+    #form-expiry, #form-year {
+        display: inline-block;
+        max-width: 48%;
+    }
+
 }
 
 
@@ -966,6 +1152,10 @@ transition: opacity 0.5s;
 
     .key-point-img {
         margin-top: 2rem;
+    }
+
+    .purchase-form .cta-button, .cta-button input{
+        min-width: 6rem;
     }
 }
 
@@ -1055,11 +1245,20 @@ transition: opacity 0.5s;
     .mobile-hero-text {
         display: block;
     }
+
+    .purchase-form .column-1-of-3:not(:nth-child(3)) {
+        margin-right: 0; 
+    }
 }
 
 @media (max-width: 396px) {
     .main-banner .banner-text {
         top: 28%;
+    }    
+
+    #form-expiry, #form-year {
+        display: block;
+        max-width: 100%;
     }
 }
 
