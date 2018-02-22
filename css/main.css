@@ -1662,3 +1662,26 @@ code span {
     flex: 1 1 30%;
 }
 
+#chat-options{
+    margin-top: 0;
+    text-align: center;
+}
+
+#chat-options h3{
+    font-size: 1.5rem;
+}
+
+#chat-options img{
+    max-width: 15%;
+    height: auto;
+}
+
+
+#chat-options .no-interaction {
+    padding: 2rem;
+    z-index: 9;
+    opacity: 1;
+    transition: opacity 0.5s;
+    background: white;
+}
+
