@@ -134,7 +134,8 @@ code span {
 }
 
 .product-info-accordion {
-    background-color: #4B83AD;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #899da3;
     color: white;
     cursor: pointer;
     height: 2.75rem;
@@ -385,7 +386,7 @@ footer ul {
 }
 
 #main-nav li:nth-child(4) {
-    flex: 50 0 auto;
+    flex: 1 1 50%;
 }
 
 /* Styling for product listing */
@@ -751,23 +752,22 @@ transition: opacity 0.5s;
     height: auto;
 }
 
-#gaming-wrapper .content {
+#gaming-wrapper .content, #work-wrapper .content, #home-wrapper .content {
     margin: 3rem 15rem 0;
 }
 
-#gaming-wrapper .column-1-of-2 {
+#gaming-wrapper .column-1-of-2, #work-wrapper .column-1-of-2, #home-wrapper .column-1-of-2 {
     margin-bottom: 2rem;
 }
 
-#gaming-wrapper .column-1-of-2:first-child {
+#gaming-wrapper .column-1-of-2:first-child, #work-wrapper .column-1-of-2:first-child, #home-wrapper .column-1-of-2:first-child {
     margin-right: 3rem;
 }
 
-#gaming-wrapper .panel-wrapper {
+#gaming-wrapper .panel-wrapper, #work-wrapper .panel-wrapper, #home-wrapper .panel-wrapper {
     border: 1px solid #eaf1f7;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
-
 
 .product-listing h4,
 .product-listing p {
@@ -809,16 +809,179 @@ transition: opacity 0.5s;
     text-align: center;
 }
 
+/* product page */
+
+#product-wrapper #product-overview .column-1-of-2:first-child {
+    margin-right: 2rem;
+}
+
 .product-copy p {
     text-align: left;
-    margin-bottom: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 2rem 4rem 2rem;
 }
 
 .product-view {
     max-width: 100%;
     max-height: 33rem;
+}
+
+.smaller-product-views {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.smaller-product-views img {
+    display: flex;
+    width: 20%;
+    height: 20%;
+    flex: 0 1 auto;
+    border: 1px solid #eaf1f7;
+}
+
+.brief-product-info {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.brief-product-info h3 {
+    display: inline-block;
+}
+
+.brief-product-info h3:last-of-type {
+    position: absolute;
+    right: 0;
+}
+
+.brief-product-info .reviews {
+    display: block;
+    text-align: left;
+}
+
+.brief-product-info p {
+    display: inline-block;
+    margin: 0;
+}
+
+.brief-product-info p:first-child {
+    margin-right: 1rem;
+}
+
+.accordion {
+    margin-bottom: 3rem;
+}
+
+#product-categories-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+#product-categories-container img {
+    max-width: 50%;
+}
+
+.product-categories-featured {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.product-categories-featured img {
+    max-width: 100%;
+}
+
+.product-categories-secondary {
+    flex-direction: column;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.game-logo {
+    width: 15%;
+    height: 15%;
+    flex: 0 1 auto;
+}
+
+.product-page-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.key-point:first-of-type .column-1-of-2:first-of-type, .key-point:last-of-type .column-1-of-2:first-of-type {
+    margin-right: 2rem;
+}
+
+.key-point:nth-of-type(2) .column-1-of-2:last-of-type {
+    margin-right: 2rem;
+}
+
+.key-point:first-of-type {
+    margin-top: 3rem;
+}
+
+.key-point:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.key-point {
+    align-items: center;
+}
+
+.key-point-img {
+    width: 100%;
+    height: 15rem;
+    align-items: center;
+}
+
+#testimonial {
+    text-align: center;
+}
+
+#testimonial .grid-wrapper h3{
+    font-size: 5rem;
+    color: blue;
+}
+
+#review{
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+#right-quotation{
+    align-content: flex-end;
+}
+
+#testimonial .grid-wrapper {
+    display: flex;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+#testimonial .product-page-buttons{
+    justify-content: center;
+}
+
+#testimonial .cta-button:nth-child(2) {
+    padding: 0.5rem;
+}
+
+#testimonial .cta-button:first-child, #testimonial .cta-button:nth-child(2){
+    margin-right: 1rem;
+    align-self: center;
+}
+
+#testimonial .column-1-of-3 {
+    -webkit-flex: 1 1 30%;
+    -ms-flex: 1 1 30%;
+    flex: 1 1 30%;
 }
 
 /* purchase form */
@@ -944,100 +1107,7 @@ transition: opacity 0.5s;
 }
 
 
-/*Grid Test*/
 
-#product-categories-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: space-around;
-    padding-left: 10rem;
-    padding-right: 10rem;
-
-}
-
-#product-categories-container img {
-    max-width: 50%;
-}
-
-.product-categories-featured {
-    background-color: aliceblue;
-    text-align: center;
-}
-
-.product-categories-featured img {
-    max-width: 100%;
-}
-
-.product-categories-secondary {
-    flex-direction: column;
-    background-color: aliceblue;
-    text-align: center;
-}
-
-.smaller-product-views {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-.smaller-product-views img {
-    display: flex;
-    width: 20%;
-    height: 20%;
-    flex: 0 1 auto;
-}
-
-.ideal-for {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-.game-logo {
-    width: 15%;
-    height: 15%;
-    flex: 0 1 auto;
-}
-
-.subtotal {
-    position: relative;
-    width: 100%;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: #102c34;
-}
-
-.subtotal p {
-    text-align: right;
-    margin-bottom: 3rem;
-}
-
-.product-page-buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.key-point:first-of-type {
-    margin-top: 3rem;
-}
-
-.key-point {
-    margin-top: 5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    align-items: center;
-
-
-}
-
-.key-point-img {
-    width: 100%;
-    height: 15rem;
-    align-items: center;
-}
 
 @media (min-width: 1281px) {
     p,
@@ -1051,7 +1121,7 @@ transition: opacity 0.5s;
         bottom: 14%;
     }
 
-    #gaming-wrapper .content {
+    #gaming-wrapper .content, #work-wrapper .content, #home-wrapper .content {
         margin: 3rem 7rem 0;
     }
 }
@@ -1072,7 +1142,7 @@ transition: opacity 0.5s;
         top: 30%;
     }
 
-    #carbon-difference .grid-wrapper, #systems .grid-wrapper, .purchase-form .grid-wrapper {
+    #carbon-difference .grid-wrapper, #systems .grid-wrapper, .purchase-form .grid-wrapper, #product-wrapper .grid-wrapper {
         flex-direction: column;
     }
 
@@ -1102,12 +1172,16 @@ transition: opacity 0.5s;
         flex-direction: column;
     }
 
-    #gaming-wrapper .column-1-of-2 {
+    #gaming-wrapper .column-1-of-2, #work-wrapper .column-1-of-2, #home-wrapper .column-1-of-2 {
         margin-bottom: 0;
     }
 
-    #gaming-wrapper .column-1-of-2:first-child  {
+    #gaming-wrapper .column-1-of-2:first-child, #work-wrapper .column-1-of-2:first-child, #home-wrapper .column-1-of-2:first-child {
         margin-right: 1rem;
+    }
+
+    #product-wrapper .smaller-product-views {
+        margin-bottom: 3rem;
     }
 
     .purchase-form .grid-wrapper {
@@ -1133,7 +1207,6 @@ transition: opacity 0.5s;
 
 }
 
-
 @media (max-width: 767px) {
     .hero-text {
         margin: 0 0 1rem 0;
@@ -1145,10 +1218,6 @@ transition: opacity 0.5s;
 
     .hero-bottom-text {
         bottom: 9%;
-    }
-
-    .ideal-for {
-        margin-top: 5rem;
     }
 
     .key-point-img {
@@ -1169,20 +1238,28 @@ transition: opacity 0.5s;
         font-size: 0.75rem;
     }
 
-    #gaming-wrapper .grid-wrapper {
+    #gaming-wrapper .grid-wrapper, #work-wrapper .grid-wrapper, #home-wrapper .grid-wrapper {
         flex-direction: column;
     }
 
-    #gaming-wrapper .grid-wrapper {
+    #gaming-wrapper .grid-wrapper, #work-wrapper .grid-wrapper, #home-wrapper .grid-wrapper {
         margin-bottom: 0;
     }
 
-    #gaming-wrapper .column-1-of-2 {
+    #gaming-wrapper .column-1-of-2, #work-wrapper .column-1-of-2, #home-wrapper .column-1-of-2 {
         margin-bottom: 2rem;
     }
 
-    #gaming-wrapper .column-1-of-2:first-child {
+    #gaming-wrapper .column-1-of-2:first-child, #work-wrapper .column-1-of-2:first-child, #home-wrapper .column-1-of-2:first-child {
         margin-right: 0;
+    }
+
+    footer nav, footer nav ul {
+        display: block;
+    }
+
+    footer nav li:not(:nth-child(4)) {
+        display: block;
     }
 }
 
@@ -1232,7 +1309,7 @@ transition: opacity 0.5s;
         margin: 1rem 2.5rem 0;
     }
 
-    #gaming-wrapper .content {
+    #gaming-wrapper .content, #work-wrapper .content, #home-wrapper .content {
         margin: 3rem 2.5rem 0;
     }
 }
@@ -1249,6 +1326,13 @@ transition: opacity 0.5s;
 
     .purchase-form .column-1-of-3:not(:nth-child(3)) {
         margin-right: 0; 
+    }
+}
+
+@media (max-width:436px) {
+    #testimonial .cta-button:nth-child(2) {
+        padding: 0;
+        line-height: 1.1;
     }
 }
 
@@ -1344,7 +1428,7 @@ footer nav img {
 }
 
 footer nav li:nth-child(4) {
-    flex: 50 0 auto;
+    flex: 1 1 50%;
 }
 
 #mobile-nav {
@@ -1386,8 +1470,8 @@ footer nav li:nth-child(4) {
     }
 
     /*
- * Just a quick hamburger
- */
+    * Just a quick hamburger
+    */
     #menuToggle span {
         display: block;
         width: 33px;
@@ -1399,8 +1483,8 @@ footer nav li:nth-child(4) {
         z-index: 10;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
     }
 
     #menuToggle span:first-child {
@@ -1412,9 +1496,9 @@ footer nav li:nth-child(4) {
     }
 
     /* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
     #menuToggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
@@ -1422,24 +1506,24 @@ footer nav li:nth-child(4) {
     }
 
     /*
- * But let's hide the middle one.
- */
+    * But let's hide the middle one.
+    */
     #menuToggle input:checked ~ span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
 
     /*
- * Ohyeah and the last one should go the other direction
- */
+    * Ohyeah and the last one should go the other direction
+    */
     #menuToggle input:checked ~ span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
     }
 
     /*
- * Make this absolute positioned
- * at the top left of the screen
- */
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
     #menu {
         position: absolute;
         width: 300px;
@@ -1461,8 +1545,8 @@ footer nav li:nth-child(4) {
     }
 
     /*
- * And let's slide it in from the left
- */
+    * And let's slide it in from the left
+    */
     #menuToggle input:checked ~ ul {
         transform: none;
     }
@@ -1544,54 +1628,6 @@ input[type=search]:focus {
 code span {
     display: block;
     height: 1rem;
-}
-
-.product-info-accordion {
-    background-color: #4B83AD;
-    color: white;
-    cursor: pointer;
-    height: 2.75rem;
-    padding: 1rem;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: color 0.75s, background-color 0.75s;
-}
-
-
-.active,
-.product-info-accordion:hover {
-    background-color: #3057D5;
-}
-
-.product-info-accordion:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.product-info-panel {
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.product-overview .product-info-panel p {
-    padding: 1rem 0 1rem 3rem;
-    margin: 0;
-    border-bottom: 1px solid #102c34;
-    display: flex;
-    position: relative;
-    text-align: center;
 }
 
 .key-point:first-of-type {
