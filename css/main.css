@@ -5,7 +5,6 @@ Default styling for the style guide
 
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: #eaf1f7;
     font-weight: 400;
 }
 
@@ -124,7 +123,7 @@ nav li:nth-child(5) {
     border-bottom: 2px solid white;
 }
 
-nav li:nth-child(5) .button-nav:hover:before {
+#main-nav li:nth-child(5) .button-nav:hover:before {
     border: none;
 }
 
@@ -360,19 +359,26 @@ COMBINED ELEMENTS -------------------
 /* Styling for product listing */
 
 .product-listing {
-    position: relative;
     display: block;
-    width: 22%;
 }
 
-.product-listing img {
+.product-listing .panel-wrapper {
+    transition: background 0.5s;
+    display: block;
     width: 100%;
-    opacity: 0.25;
-    transition: opacity 0.5s;
+    height: 100%;
 }
 
-.product-listing img:hover {
-    opacity: 1;
+/*
+.product-listing img {
+width: 100%;
+opacity: 0.25;
+transition: opacity 0.5s;
+}
+*/
+
+.product-listing .panel-wrapper:hover {
+    background: #eaf1f7; 
 }
 
 .product-detail {
@@ -424,8 +430,9 @@ COMBINED ELEMENTS -------------------
 }
 
 .column-1-of-4 {
-    flex: 0 1 22%;
-    margin-right: 2rem;
+    -webkit-flex: 1 1 25%;
+    -ms-flex: 1 1 25%;
+    flex: 0 1 25%;
 }
 
 .placeholder {
@@ -572,12 +579,12 @@ COMBINED ELEMENTS -------------------
     margin: 3rem 0 1rem 0;
 }
 
-#systems h4{
+#systems h4, #systems p {
     text-align: center;
 }
 
 #systems .column-1-of-3 {
-    border: 1px solid black;
+    border: 1px solid #eaf1f7;
 }
 
 #systems .column-1-of-3:not(:last-child) {
@@ -588,7 +595,7 @@ COMBINED ELEMENTS -------------------
     margin: 1rem 0 1.5rem 0 ;
 }
 
-#systems .panel-wrapper {
+.panel-wrapper {
     position: relative;
     max-width: 100%;
     height: auto;
@@ -641,7 +648,12 @@ COMBINED ELEMENTS -------------------
 
 #latest-news .column-1-of-2:first-child {
     padding-right: 1rem;
-    flex: 1 1 40%;  
+    flex: 1 1 40%; 
+    margin-right: 3rem;
+}
+
+#latest-news .column-1-of-2:first-child p {
+    text-align: right;
 }
 
 #latest-news .column-1-of-2:nth-child(2) {
@@ -691,7 +703,29 @@ COMBINED ELEMENTS -------------------
     overflow: hidden;
 }
 
-/* product page */
+/* product listing page */
+
+/*
+#gaming-wrapper .grid-wrapper {
+flex-wrap: no-wrap;
+}
+*/
+
+#gaming-wrapper .column-1-of-2 {
+    margin-bottom: 2rem;
+}
+#gaming-wrapper .column-1-of-2:first-child  {
+    margin-right: 3rem;
+}
+
+#gaming-wrapper .panel-wrapper {
+    border: 1px solid #eaf1f7;
+    padding-bottom: 3rem;
+}
+
+.product-listing h4, .product-listing p {
+    text-align: center;
+}
 
 .product-page .main-banner h1,
 .product-page .main-banner h2 {
@@ -843,6 +877,7 @@ COMBINED ELEMENTS -------------------
 
     #carbon-difference .cta-button {
         display: block;
+        max-width: 9rem;
         margin: 2rem auto;
     }
 
@@ -852,6 +887,10 @@ COMBINED ELEMENTS -------------------
 
     #systems .column-1-of-3:not(:last-child) {
         margin-right: 0;
+    }
+
+    #latest-news .column-1-of-2:first-child {
+        margin-right: 2rem;
     }
 
     #social-media .grid-wrapper {
@@ -925,6 +964,10 @@ COMBINED ELEMENTS -------------------
         width: 1.75rem;
         height: 1.75rem;
         border: 1px solid white;
+    }
+
+    section .content {
+        margin: 1rem 2.5rem 0; 
     }
 }
 
@@ -1009,6 +1052,11 @@ footer nav li, footer nav li:nth-child(5) {
     flex: 1 1 auto;
     text-align: center;
     align-self: flex-end;
+}
+
+footer .button-nav {
+    font-size: 0.5rem;
+    color: white;
 }
 
 footer nav img {
