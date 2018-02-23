@@ -1601,6 +1601,7 @@ input[type=search]:focus {
     padding-left: 10px;
     color: transparent;
     cursor: pointer;
+    border-color: transparent;
 }
 
 #search-icon input[type=search]:hover {
