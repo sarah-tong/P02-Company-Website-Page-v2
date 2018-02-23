@@ -282,7 +282,9 @@ code span {
     color: black;
 }
 
-label, input, select {
+label,
+input,
+select {
     display: block;
     border-radius: 0;
 }
@@ -752,19 +754,27 @@ transition: opacity 0.5s;
     height: auto;
 }
 
-#gaming-wrapper .content, #work-wrapper .content, #home-wrapper .content {
+#gaming-wrapper .content,
+#work-wrapper .content,
+#home-wrapper .content {
     margin: 3rem 15rem 0;
 }
 
-#gaming-wrapper .column-1-of-2, #work-wrapper .column-1-of-2, #home-wrapper .column-1-of-2 {
+#gaming-wrapper .column-1-of-2,
+#work-wrapper .column-1-of-2,
+#home-wrapper .column-1-of-2 {
     margin-bottom: 2rem;
 }
 
-#gaming-wrapper .column-1-of-2:first-child, #work-wrapper .column-1-of-2:first-child, #home-wrapper .column-1-of-2:first-child {
+#gaming-wrapper .column-1-of-2:first-child,
+#work-wrapper .column-1-of-2:first-child,
+#home-wrapper .column-1-of-2:first-child {
     margin-right: 3rem;
 }
 
-#gaming-wrapper .panel-wrapper, #work-wrapper .panel-wrapper, #home-wrapper .panel-wrapper {
+#gaming-wrapper .panel-wrapper,
+#work-wrapper .panel-wrapper,
+#home-wrapper .panel-wrapper {
     border: 1px solid #eaf1f7;
     padding-bottom: 2rem;
 }
@@ -914,7 +924,8 @@ transition: opacity 0.5s;
     justify-content: flex-end;
 }
 
-.key-point:first-of-type .column-1-of-2:first-of-type, .key-point:last-of-type .column-1-of-2:first-of-type {
+.key-point:first-of-type .column-1-of-2:first-of-type,
+.key-point:last-of-type .column-1-of-2:first-of-type {
     margin-right: 2rem;
 }
 
@@ -944,17 +955,17 @@ transition: opacity 0.5s;
     text-align: center;
 }
 
-#testimonial .grid-wrapper h3{
+#testimonial .grid-wrapper h3 {
     font-size: 5rem;
     color: blue;
 }
 
-#review{
+#review {
     margin-top: 3rem;
     font-size: 3rem;
 }
 
-#right-quotation{
+#right-quotation {
     align-content: flex-end;
 }
 
@@ -965,7 +976,7 @@ transition: opacity 0.5s;
     flex-wrap: wrap;
 }
 
-#testimonial .product-page-buttons{
+#testimonial .product-page-buttons {
     justify-content: center;
 }
 
@@ -973,7 +984,8 @@ transition: opacity 0.5s;
     padding: 0.5rem;
 }
 
-#testimonial .cta-button:first-child, #testimonial .cta-button:nth-child(2){
+#testimonial .cta-button:first-child,
+#testimonial .cta-button:nth-child(2) {
     margin-right: 1rem;
     align-self: center;
 }
@@ -1054,7 +1066,7 @@ transition: opacity 0.5s;
 }
 
 .clear {
-    padding: 0; 
+    padding: 0;
 }
 
 .purchase-form .input-wrapper {
@@ -1077,7 +1089,8 @@ transition: opacity 0.5s;
     flex: 1 1 60%;
 }
 
-#form-expiry, #form-year {
+#form-expiry,
+#form-year {
     display: inline-block;
     width: auto;
 }
@@ -1093,7 +1106,8 @@ transition: opacity 0.5s;
     border: 1px solid #eaf1f7;
 }
 
-.order-details h4, .order-details p {
+.order-details h4,
+.order-details p {
     text-align: center;
 }
 
@@ -1121,13 +1135,16 @@ transition: opacity 0.5s;
         bottom: 14%;
     }
 
-    #gaming-wrapper .content, #work-wrapper .content, #home-wrapper .content {
+    #gaming-wrapper .content,
+    #work-wrapper .content,
+    #home-wrapper .content {
         margin: 3rem 7rem 0;
     }
 }
 
 @media (max-width: 931px) {
-    #form-expiry, #form-year {
+    #form-expiry,
+    #form-year {
         display: block;
         width: 100%;
     }
@@ -1142,7 +1159,10 @@ transition: opacity 0.5s;
         top: 30%;
     }
 
-    #carbon-difference .grid-wrapper, #systems .grid-wrapper, .purchase-form .grid-wrapper, #product-wrapper .grid-wrapper {
+    #carbon-difference .grid-wrapper,
+    #systems .grid-wrapper,
+    .purchase-form .grid-wrapper,
+    #product-wrapper .grid-wrapper {
         flex-direction: column;
     }
 
@@ -1172,11 +1192,15 @@ transition: opacity 0.5s;
         flex-direction: column;
     }
 
-    #gaming-wrapper .column-1-of-2, #work-wrapper .column-1-of-2, #home-wrapper .column-1-of-2 {
+    #gaming-wrapper .column-1-of-2,
+    #work-wrapper .column-1-of-2,
+    #home-wrapper .column-1-of-2 {
         margin-bottom: 0;
     }
 
-    #gaming-wrapper .column-1-of-2:first-child, #work-wrapper .column-1-of-2:first-child, #home-wrapper .column-1-of-2:first-child {
+    #gaming-wrapper .column-1-of-2:first-child,
+    #work-wrapper .column-1-of-2:first-child,
+    #home-wrapper .column-1-of-2:first-child {
         margin-right: 1rem;
     }
 
@@ -1188,7 +1212,7 @@ transition: opacity 0.5s;
         padding: 2rem;
     }
 
-    .purchase-form .column-1-of-3{
+    .purchase-form .column-1-of-3 {
         width: 100%;
     }
 
@@ -1196,11 +1220,13 @@ transition: opacity 0.5s;
         margin-bottom: 1rem;
     }
 
-    .input-wrapper .column-1-of-3, input-wrapper .column-1-of-3:last-child {
+    .input-wrapper .column-1-of-3,
+    input-wrapper .column-1-of-3:last-child {
         text-align: center !important;
     }
 
-    #form-expiry, #form-year {
+    #form-expiry,
+    #form-year {
         display: inline-block;
         max-width: 48%;
     }
@@ -1224,7 +1250,8 @@ transition: opacity 0.5s;
         margin-top: 2rem;
     }
 
-    .purchase-form .cta-button, .cta-button input{
+    .purchase-form .cta-button,
+    .cta-button input {
         min-width: 6rem;
     }
 }
@@ -1238,23 +1265,32 @@ transition: opacity 0.5s;
         font-size: 0.75rem;
     }
 
-    #gaming-wrapper .grid-wrapper, #work-wrapper .grid-wrapper, #home-wrapper .grid-wrapper {
+    #gaming-wrapper .grid-wrapper,
+    #work-wrapper .grid-wrapper,
+    #home-wrapper .grid-wrapper {
         flex-direction: column;
     }
 
-    #gaming-wrapper .grid-wrapper, #work-wrapper .grid-wrapper, #home-wrapper .grid-wrapper {
+    #gaming-wrapper .grid-wrapper,
+    #work-wrapper .grid-wrapper,
+    #home-wrapper .grid-wrapper {
         margin-bottom: 0;
     }
 
-    #gaming-wrapper .column-1-of-2, #work-wrapper .column-1-of-2, #home-wrapper .column-1-of-2 {
+    #gaming-wrapper .column-1-of-2,
+    #work-wrapper .column-1-of-2,
+    #home-wrapper .column-1-of-2 {
         margin-bottom: 2rem;
     }
 
-    #gaming-wrapper .column-1-of-2:first-child, #work-wrapper .column-1-of-2:first-child, #home-wrapper .column-1-of-2:first-child {
+    #gaming-wrapper .column-1-of-2:first-child,
+    #work-wrapper .column-1-of-2:first-child,
+    #home-wrapper .column-1-of-2:first-child {
         margin-right: 0;
     }
 
-    footer nav, footer nav ul {
+    footer nav,
+    footer nav ul {
         display: block;
     }
 
@@ -1309,7 +1345,9 @@ transition: opacity 0.5s;
         margin: 1rem 2.5rem 0;
     }
 
-    #gaming-wrapper .content, #work-wrapper .content, #home-wrapper .content {
+    #gaming-wrapper .content,
+    #work-wrapper .content,
+    #home-wrapper .content {
         margin: 3rem 2.5rem 0;
     }
 }
@@ -1325,7 +1363,7 @@ transition: opacity 0.5s;
     }
 
     .purchase-form .column-1-of-3:not(:nth-child(3)) {
-        margin-right: 0; 
+        margin-right: 0;
     }
 }
 
@@ -1339,9 +1377,10 @@ transition: opacity 0.5s;
 @media (max-width: 396px) {
     .main-banner .banner-text {
         top: 28%;
-    }    
+    }
 
-    #form-expiry, #form-year {
+    #form-expiry,
+    #form-year {
         display: block;
         max-width: 100%;
     }
@@ -1483,8 +1522,8 @@ footer nav li:nth-child(4) {
         z-index: 10;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-            opacity 0.55s ease;
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
     }
 
     #menuToggle span:first-child {
@@ -1663,17 +1702,17 @@ code span {
     text-align: center;
 }
 
-#testimonial .grid-wrapper h3{
+#testimonial .grid-wrapper h3 {
     font-size: 5rem;
     color: blue;
 }
 
-#review{
+#review {
     margin-top: 3rem;
     font-size: 3rem;
 }
 
-#right-quotation{
+#right-quotation {
     align-content: flex-end;
 }
 
@@ -1684,11 +1723,11 @@ code span {
     flex-wrap: wrap;
 }
 
-#testimonial .product-page-buttons{
+#testimonial .product-page-buttons {
     justify-content: center;
 }
 
-#testimonial .cta-button{
+#testimonial .cta-button {
     margin: 1rem;
 }
 
@@ -1699,16 +1738,16 @@ code span {
     flex: 1 1 30%;
 }
 
-#chat-options{
+#chat-options {
     margin-top: 0;
     text-align: center;
 }
 
-#chat-options h3{
+#chat-options h3 {
     font-size: 1.5rem;
 }
 
-#chat-options img{
+#chat-options img {
     max-width: 15%;
     height: auto;
 }
@@ -1722,3 +1761,15 @@ code span {
     background: white;
 }
 
+#chat-options .grid-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width:700px) {
+    #chat-options .grid-wrapper {
+        flex-direction: column;
+    }
+
+}
