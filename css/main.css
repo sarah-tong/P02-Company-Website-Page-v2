@@ -637,7 +637,7 @@ transition: opacity 0.5s;
 .panel-wrapper {
     position: relative;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -657,6 +657,7 @@ transition: opacity 0.5s;
     opacity: 1;
     transition: opacity 0.5s;
     background: white;
+    height: 100%;
 }
 
 .no-interaction:hover {
@@ -670,6 +671,7 @@ transition: opacity 0.5s;
     left: 0;
     z-index: -3;
     color: white;
+    height: 100%;
 }
 
 .hover-state h4 {
