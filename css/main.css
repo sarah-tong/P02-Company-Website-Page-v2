@@ -329,7 +329,7 @@ code span {
 .input-field-label {
     display: block;
     font-weight: 700;
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .text-input-field {
@@ -953,38 +953,38 @@ transition: opacity 0.5s;
 
 /*
 #product-categories-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: space-around;
-    padding-left: 10rem;
-    padding-right: 10rem;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+align-content: space-around;
+padding-left: 10rem;
+padding-right: 10rem;
 }
 
 #product-categories-container img {
-    max-width: 50%;
+max-width: 50%;
 }
 
 .product-categories-featured {
-    background-color: aliceblue;
-    text-align: center;
+background-color: aliceblue;
+text-align: center;
 }
 
 .product-categories-featured img {
-    max-width: 100%;
+max-width: 100%;
 }
 
 .product-categories-secondary {
-    flex-direction: column;
-    background-color: aliceblue;
-    text-align: center;
+flex-direction: column;
+background-color: aliceblue;
+text-align: center;
 }
 
 .game-logo {
-    width: 15%;
-    height: 15%;
-    flex: 0 1 auto;
+width: 15%;
+height: 15%;
+flex: 0 1 auto;
 }
 */
 
@@ -1110,7 +1110,6 @@ transition: opacity 0.5s;
 
 #purchase-form-ship-wrapper .grid-wrapper .column-1-of-3:not(:nth-child(3)) {
     flex: 1 1 90%;
-    margin-right: 2rem;
 }
 
 #purchase-form-ship-wrapper .back {
@@ -1122,7 +1121,7 @@ transition: opacity 0.5s;
     height: 0%;
 }
 
-.purchase-form .column-1-of-3:not(:nth-child(3)) {
+.purchase-form .column-1-of-3:not(:nth-child(3)), .purchase-form .column-1-of-2:first-child {
     margin-right: 2rem;
 }
 
@@ -1134,6 +1133,22 @@ transition: opacity 0.5s;
 
 .purchase-form .input-field-label:first-child {
     margin-top: 0;
+}
+
+.purchase-form .text-input-field, .select-field {
+    margin-bottom: 2rem;
+}
+
+#form-province-wrapper, #form-postal-code-wrapper, #form-cvv-wrapper, #form-expiry-wrapper{
+    display:inline-block;
+}
+
+#form-province-wrapper, #form-cvv-wrapper {
+    margin-right: 1.5rem;
+}
+
+#form-cvv {
+    width: 5rem; 
 }
 
 .clear {
@@ -1156,9 +1171,11 @@ transition: opacity 0.5s;
     text-align: right;
 }
 
+/*
 #purchase-form-pay-wrapper .purchase-form .column-1-of-3:not(:nth-child(2)) {
-    flex: 1 1 60%;
+flex: 1 1 60%;
 }
+*/
 
 #form-expiry,
 #form-year {
@@ -1266,18 +1283,6 @@ footer nav li:nth-child(4) {
     }
 }
 
-@media (max-width: 931px) {
-    #form-expiry,
-    #form-year {
-        display: block;
-        width: 100%;
-    }
-
-    #form-expiry {
-        margin-bottom: 0.5rem;
-    }
-}
-
 @media (max-width: 873px) {
     .main-banner .banner-text {
         top: 30%;
@@ -1336,12 +1341,13 @@ footer nav li:nth-child(4) {
         padding: 2rem;
     }
 
-    .purchase-form .column-1-of-3 {
+    .purchase-form .column-1-of-3, .purchase-form .column-1-of-2 {
         width: 100%;
+        margin-bottom: 0;
     }
 
-    .purchase-form .column-1-of-3:not(:nth-child(3)) {
-        margin-bottom: 1rem;
+    .purchase-form .text-input-field, .select-field {
+        margin-bottom: 3rem;
     }
 
     .input-wrapper .column-1-of-3,

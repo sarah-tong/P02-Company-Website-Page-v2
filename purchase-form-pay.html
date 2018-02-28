@@ -120,7 +120,7 @@
                     <h3>Payment Details</h3>
                     <form method="post" action="#">
                         <div class="grid-wrapper">
-                            <div class="column-1-of-3">
+                            <div class="column-1-of-2">
                                 <label class="input-field-label" for="form-name">Cardholder Name</label>
                                 <input class="text-input-field" type="text" id="form-name" placeholder="e.g. John Smith">
 
@@ -128,29 +128,38 @@
                                 <input class="text-input-field" type="text" id="form-card-number" placeholder="5336396452755719">
                             </div>
 
-                            <div class="column-1-of-3">
-                                <label class="input-field-label" for="form-cvv">CVV</label> 
-                                <input class="text-input-field" type="text" id="form-cvv" placeholder="240">
-
-                                <label class="input-field-label" for="form-expiry">Expiration Date</label> 
-                                <select class="select-field" id="form-expiry" name="form-date">
-                                    <option value="Jan">01</option>
-                                    <option value="Feb">02</option>
-                                </select>
-                                <select class="select-field" id="form-year" name="form-year">
-                                    <option value="2018">2018</option>
-                                    <option value="2019">2019</option>
-                                </select>
-                            </div>
-
-                            <div class="column-1-of-3">
-                                <label class="input-field-label" for="form-card-type">Province</label> 
+                            <div class="column-1-of-2">
+                                <label class="input-field-label" for="form-card-type">Card Type</label> 
                                 <select class="select-field" id="form-card-type" name="form-card-type">
                                     <option value="Mastercard">Mastercard</option>
                                     <option value="Visa">Visa</option>
                                     <option value="American-Express">American Express</option>
-                                </select>
+                                </select> 
+
+                                <div id="form-cvv-wrapper">
+                                    <label class="input-field-label" for="form-cvv">CVV</label> 
+                                    <input class="text-input-field" type="text" id="form-cvv" placeholder="e.g. 240">
+                                </div>
+
+
+                                <div id="form-expiry-wrapper">
+                                    <label class="input-field-label" for="form-expiry">Expiration Date</label> 
+                                    <select class="select-field" id="form-expiry" name="form-date">
+                                        <option value="Jan">01</option>
+                                        <option value="Feb">02</option>
+                                    </select>
+                                    <select class="select-field" id="form-year" name="form-year">
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                    </select>
+                                </div>
                             </div>
+
+                            <!--
+<div class="column-1-of-3">
+
+</div>
+-->
                         </div>
 
                         <div class="input-wrapper">
@@ -165,7 +174,7 @@
                             </div>
 
                             <div class="column-1-of-3">
-                                <a href="purchase-form-confirm.html" class="cta-button next">submit</a>
+                                <a href="purchase-form-confirm.html" class="cta-button next">Purchase</a>
                             </div>
                         </div>
 

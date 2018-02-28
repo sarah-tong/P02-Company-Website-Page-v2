@@ -121,7 +121,7 @@
                     <h3>Shipping Address</h3>
                     <form method="post" action="#">
                         <div class="grid-wrapper">
-                            <div class="column-1-of-3">
+                            <div class="column-1-of-2">
                                 <label class="input-field-label" for="form-name">Full Name</label>
                                 <input class="text-input-field" type="text" id="form-name" placeholder="e.g. John Smith">
 
@@ -132,24 +132,26 @@
                                 <input class="text-input-field" type="text" id="form-address2" placeholder="(Optional)">
                             </div>
 
-                            <div class="column-1-of-3">
+                            <div class="column-1-of-2">
                                 <label class="input-field-label" for="form-city">City</label> 
                                 <input class="text-input-field" type="text" id="form-city" placeholder="e.g. Vancouver">
 
+                                <div id="form-province-wrapper">
+                                    <label class="input-field-label" for="form-province">Province</label> 
+                                    <select class="select-field" id="form-province" name="form-province">
+                                        <option value="British-Columbia">BC</option>
+                                        <option value="Alberta">AB</option>
+                                        <option value="Quebec">QC</option>
+                                    </select>
+                                </div>
+
+                                <div id="form-postal-code-wrapper">
                                 <label class="input-field-label" for="form-postal-code">Postal Code</label> 
                                 <input class="text-input-field" id="form-postal-code" placeholder="e.g. H3L PM3">
+                                </div>
 
                                 <label class="input-field-label" for="form-telephone">Telephone</label> 
                                 <input class="text-input-field" id="form-telephone" placeholder="e.g. 123-456-7891">
-                            </div>
-
-                            <div class="column-1-of-3">
-                                <label class="input-field-label" for="form-province">Province</label> 
-                                <select class="select-field" id="form-province" name="form-province">
-                                    <option value="British-Columbia">BC</option>
-                                    <option value="Alberta">AB</option>
-                                    <option value="Quebec">QC</option>
-                                </select>
                             </div>
                         </div>
 
