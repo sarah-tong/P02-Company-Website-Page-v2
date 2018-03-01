@@ -8,7 +8,7 @@ body {
     font-weight: 400;
 }
 
-p {
+p, ul {
     font-size: 0.75rem;
     line-height: 1.5rem;
 }
