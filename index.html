@@ -1,65 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <title>Carbon.co</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/grids.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-    </head>
+<head>
+    <title>Carbon.co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
 
-    <body>
-        <nav id="main-nav">
-            <ul>
+<body>
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <a href="index.html" class="button-nav">carbon.co</a>
+            </li>
+
+            <li>
+                <a href="gaming.html" class="button-nav">gaming</a>
+            </li>
+
+            <li>
+                <a href="work.html" class="button-nav">work</a>
+            </li>
+
+            <li>
+                <a href="home.html" class="button-nav">household</a>
+            </li>
+
+            <li>
+                <a href="chat.html" class="button-nav">chat</a>
+            </li>
+
+            <li>
+                <a href="about.html" class="button-nav">about</a>
+            </li>
+
+            <li>
+                <form id="search-icon">
+                    <input type="search">
+                </form>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <nav id="mobile-nav" role="navigation">
+        <div id="menuToggle">
+
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+
+                <li>
+                    <a href="index.html" class="button-nav">carbon.co</a>
+                </li>
                 <li>
                     <a href="gaming.html" class="button-nav">gaming</a>
                 </li>
+
                 <li>
                     <a href="work.html" class="button-nav">work</a>
                 </li>
+
                 <li>
-                    <a href="custom.html" class="button-nav">custom</a>
+                    <a href="home.html" class="button-nav">household</a>
                 </li>
+
+                <li>
+                    <a href="chat.html" class="button-nav"> chat </a>
+                </li>
+
                 <li>
                     <a href="about.html" class="button-nav">about</a>
                 </li>
                 <li>
-                    <a href="#" class="button-nav">carbon.co</a>
-                </li>
-                <li>
-                    <a href="search.html" class="button-nav">
-                        <img src="img/icons/magnifying-glass-icon.svg" alt="search icon">
-                    </a>
-                </li>
-
-                <li>
-                    <a href="cart.html" class="button-nav">
-                        <img src="img/icons/shopping-cart-black-shape.svg" alt="shopping cart icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="chat.html" class="button-nav">
-                        <img src="img/icons/customer-service.svg" alt="speech bubble icon">
-                    </a>
+                    <form id="search-mobile">
+                        <input type="text" placeholder="Search...">
+                    </form>
                 </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 
-        <div id="homepage-wrapper">
-            <section class="main-banner">
-                    <img class="home-hero-image" src="img/homepage-banner.png" alt="close up of computer with monitor in the background">
-                <div class="banner-text">
-                    <h1 class="hero-text">carbon computers</h1>
-                    <span></span>
-                    <p>North America’s only custom computer builder that values experience first, specs second.</p>
-                </div>
-                <a class="jump-down-button" href="#">
+    <div id="homepage-wrapper">
+        <section class="main-banner">
+            <img class="home-hero-image" src="img/homepage-banner.png" alt="close up of computer with monitor in the background">
+            <div class="banner-text">
+                <h1 class="hero-text">carbon computers</h1>
+                <span class="banner-header-underline"></span>
+                <p>North America’s only system integrator that values experience first, specs second.</p>
+            </div>
+            <a class="see-more-button jump-down-button" href="#carbon-difference">
                     <img src="img/icons/down-chevron.svg" alt="down pointing arrow">
                 </a>
-            </section>
-        </div>
+        </section>
 
-    </body>
+        <section id="carbon-difference">
+            <h2>the carbon difference</h2>
+            <span class="header-underline"></span>
+
+                <div class="grid-content">
+                    <div class="grid-wrapper">
+                        <div class="column-1-of-2">
+                            <p>
+                                Yep, you heard right. Our strategy here at Carbon Computers is not to sell an insane number of different computers all with infinitely different variations.
+                            </p>
+                            <p>
+                                Our industry experience and careful research allows us to present a carefully curated set of products all optimized for specific experiences, be it for gaming or work.
+                            </p>
+                            <p>
+                                This allows to focus out resources into only buying components that we need, reducing our overhead and your cost.
+                            </p>
+                            <a class="cta-button" href="about.html">our story</a>
+                        </div>
+                        <div class="column-1-of-2">
+                            <img src="img/computer-images/carbon-difference.png" alt="three computers in a row">
+                        </div>
+                    </div>
+                    <div class="column-1-of-2">
+                        <img src="img/computer-images/carbon-difference.png" alt="three computers in a row">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="systems">
+            <h2>systems</h2>
+            <span class="header-underline"></span>
+
+                <div class="grid-content">
+                    <div class="grid-wrapper">
+                        <div class="column-1-of-3">
+                            <div class="panel-wrapper">
+                                <div class="no-interaction">
+                                    <a class="clickable-panel" href="gaming.html">
+                                    </a>
+                                <img class="systems-computer-img" src="img/computer-images/triton.png" alt="image of triton computer">
+                                <h4>gaming</h4>
+                                <p>Our bread and butter, gaming is our passion and speciality</p>
+                            </div>
+                            <div class="hover-state">
+                                <img class="panel-hover-image" src="img/gaming-panel-hover-state.png" alt="cropped image of monitor and mouse with blue overlay">
+                                <img class="systems-computer-img" src="img/computer-images/triton.png" alt="image of triton computer">
+                                <h4>gaming</h4>
+                                <p>Our bread and butter, gaming is our passion and speciality</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column-1-of-3">
+                        <div class="panel-wrapper">
+                            <div class="no-interaction">
+                                <a class="clickable-panel" href="work.html">
+                                    </a>
+                                <img class="systems-computer-img" src="img/computer-images/eos.png" alt="image of eos computer">
+                                <h4>work</h4>
+                                <p>Help make your business stand out, with systems that are both professional and stylish. </p>
+                            </div>
+                            <div class="hover-state">
+                                <img class="panel-hover-image" src="img/work-panel-hover-state.png" alt="cropped image of monitor and mouse with blue overlay">
+                                <img class="systems-computer-img" src="img/computer-images/eos.png" alt="image of eos computer">
+                                <h4>work</h4>
+                                <p>Help make your business stand out, with systems that are both professional and stylish. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column-1-of-3">
+                        <div class="panel-wrapper">
+                            <div class="no-interaction">
+                                <a class="clickable-panel" href="home.html">
+                                    </a>
+                                <img class="systems-computer-img" src="img/computer-images/entra.png" alt="image of entra computer">
+                                <h4>home</h4>
+                                <p>Affordable doesn't have to mean low quality.</p>
+                            </div>
+                            <div class="hover-state">
+                                <img class="panel-hover-image" src="img/custom-panel-hover-state.png" alt="cropped image of three monitors and mouse with blue overlay">
+                                <img class="systems-computer-img" src="img/computer-images/entra.png" alt="image of entra computer">
+                                <h4>home</h4>
+                                <p>Affordable doesn't have to mean low quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="latest-news">
+            <h2>latest news</h2>
+            <span class="header-underline"></span>
+
+                <div class="grid-content">
+                    <div class="grid-wrapper" id="news1">
+                        <div class="column-1-of-2">
+                            <p>02.10.2018</p>
+                        </div>
+                        <div class="column-1-of-2">
+                            <h4>PAX EAST</h4>
+                            <p>Come visit us at booth #194 to learn about upcoming releases.</p>
+                            <a class="in-text-link">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="column-1-of-2">
+                        <h4>PAX EAST</h4>
+                        <p>Come visit us at booth #194 to learn about upcoming releases.</p>
+                        <a class="in-text-link">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="grid-wrapper" id="news2">
+                    <div class="column-1-of-2">
+                        <p>09.01.2018</p>
+                    </div>
+                    <div class="column-1-of-2">
+                        <h4>PAX West</h4>
+                        <p>Come visit us at booth #39 to learn about upcoming releases.</p>
+                        <a class="in-text-link">Learn more</a>
+                    </div>
+                </div>
+
+                <a class="cta-button" href="#">see more</a>
+        </section>
+
+        <footer>
+
+            <div id="footer-wrapper">
+
+                <div id="links-one">
+                    <h4> Resources</h4>
+                    <ul>
+                        <li>
+                            <a href="about.html">Style Guide</a>
+                        </li>
+                        <li>
+                            <a href="cart.html">Citations</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="links-two">
+                    <h4> Github Repos</h4>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/sarah-tong/P02-Company">Iteration 1</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/sarah-tong/P02-Company-Website-Page">Iteration 2</a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/sarah-tong/P02-Company-Website-Page-v2">Final</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p> Copyright Carbon Computers 2018</p>
+        </footer>
+
+</body>
+
 </html>

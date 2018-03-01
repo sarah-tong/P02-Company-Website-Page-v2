@@ -51,11 +51,3 @@
 }
 
 /*Source for flexbox: IAT 339: 03 - Grids - Completed.zip*/
-
-
-.col-1-of-2 {
-    -webkit-flex: 1 1 40%;
-    -ms-flex: 1 1 40%;
-    flex: 1 1 40%;
-    margin: 0 2rem
-}
