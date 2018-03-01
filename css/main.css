@@ -93,6 +93,10 @@ nav ul {
     font-size: 1.75rem;
 }
 
+#main-nav img{
+    min-width: 2rem;
+}
+
 .button-nav {
     display: inline-block;
     position: relative;
