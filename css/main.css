@@ -31,7 +31,7 @@ margin-top: 5rem;
 }
 */
 
-section:not(:first-child){
+section:not(:first-child) {
     margin-top: 6rem;
 }
 
@@ -146,7 +146,7 @@ input::-webkit-search-cancel-button {
 
 input[type=search] {
     background: transparent url(../img/icons/magnifying-glass-icon.svg) no-repeat 9px center;
-    background-size: 50%;
+    background-size: 12%;
     background-position: center;
     border: solid 1px #ccc;
     padding: 9px 10px 9px 32px;
@@ -168,8 +168,8 @@ input[type=search]:focus {
 /* Search Icon*/
 
 #search-icon input[type=search] {
-    width: 15px;
-    padding-left: 10px;
+    width: 8rem;
+    padding-left: 0.8rem;
     color: transparent;
     cursor: pointer;
     border-color: transparent;
@@ -178,7 +178,7 @@ input[type=search]:focus {
 #search-icon input[type=search]:hover {
     background-color: transparent;
     background: transparent url(../img/icons/magnifying-glass-icon-vividblue.svg) no-repeat 9px center;
-    background-size: 50%;
+    background-size: 10%;
     background-position: center;
 }
 
@@ -186,12 +186,14 @@ input[type=search]:focus {
     background: transparent url(../img/icons/magnifying-glass-icon-vividblue.svg) no-repeat 9px center;
     background-size: 10%;
     background-position: 5% 50%;
-    width: 130px;
-    padding-left: 32px;
+    width: 8rem;
+    padding-left: 2rem;
     color: #000;
     background-color: white;
     cursor: auto;
 }
+
+
 
 /* mobile nav */
 
@@ -203,6 +205,7 @@ code span {
 #mobile-nav {
     display: none;
 }
+
 
 /* Styling for Product Information Accordian */
 
@@ -254,6 +257,24 @@ code span {
     left: 70%;
 }
 
+
+#search-mobile {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+/*    border: 2px solid #ccc;*/
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+#search-mobile input[type="text"]{
+    min-width: 100%;
+    height: 100%;
+}
 
 /* Styling for cta buttons */
 
@@ -451,13 +472,22 @@ footer ul {
     list-style: none;
 }
 
+
 #main-nav li {
     flex: 1 1 auto;
-    text-align: center;
+    justify-content: space-around;
+    margin-right: 1rem;
+    /*    text-align: center;*/
 }
 
-#main-nav li:nth-child(4) {
-    flex: 1 1 50%;
+#main-nav li:nth-child(1) {
+    flex: 1 1 40%;
+    align-items: flex-start;
+}
+
+#main-nav li:nth-child(6) {
+    margin-right: 4rem;
+    flex-grow: 0;
 }
 
 /* Styling for product listing */
@@ -472,6 +502,7 @@ footer ul {
     width: 100%;
     height: 100%;
 }
+
 
 /*
 .product-listing img {
@@ -994,7 +1025,8 @@ flex: 0 1 auto;
 }
 
 .key-point:first-of-type .column-1-of-2:first-of-type,
-.key-point:last-of-type .column-1-of-2:first-of-type, .key-point:nth-of-type(2) .column-1-of-2:last-of-type {
+.key-point:last-of-type .column-1-of-2:first-of-type,
+.key-point:nth-of-type(2) .column-1-of-2:last-of-type {
     margin-right: 2rem;
 }
 
@@ -1121,7 +1153,8 @@ flex: 0 1 auto;
     height: 0%;
 }
 
-.purchase-form .column-1-of-3:not(:nth-child(3)), .purchase-form .column-1-of-2:first-child {
+.purchase-form .column-1-of-3:not(:nth-child(3)),
+.purchase-form .column-1-of-2:first-child {
     margin-right: 2rem;
 }
 
@@ -1135,20 +1168,25 @@ flex: 0 1 auto;
     margin-top: 0;
 }
 
-.purchase-form .text-input-field, .select-field {
+.purchase-form .text-input-field,
+.select-field {
     margin-bottom: 2rem;
 }
 
-#form-province-wrapper, #form-postal-code-wrapper, #form-cvv-wrapper, #form-expiry-wrapper{
-    display:inline-block;
+#form-province-wrapper,
+#form-postal-code-wrapper,
+#form-cvv-wrapper,
+#form-expiry-wrapper {
+    display: inline-block;
 }
 
-#form-province-wrapper, #form-cvv-wrapper {
+#form-province-wrapper,
+#form-cvv-wrapper {
     margin-right: 1.5rem;
 }
 
 #form-cvv {
-    width: 5rem; 
+    width: 5rem;
 }
 
 .clear {
@@ -1210,15 +1248,18 @@ flex: 1 1 60%;
 
 /* chat page and about page*/
 
-#chat-page, #about-page{
+#chat-page,
+#about-page {
     text-align: center;
 }
 
-#chat-page .panel-wrapper, #about-page .panel-wrapper {
+#chat-page .panel-wrapper,
+#about-page .panel-wrapper {
     padding: 2rem;
 }
 
-#chat-page .panel-wrapper img, #about-page .panel-wrapper img {
+#chat-page .panel-wrapper img,
+#about-page .panel-wrapper img {
     width: 5rem;
     height: auto;
     margin-bottom: 2.5rem;
@@ -1291,7 +1332,9 @@ footer nav li:nth-child(4) {
     #carbon-difference .grid-wrapper,
     #systems .grid-wrapper,
     .purchase-form .grid-wrapper,
-    #product-wrapper .grid-wrapper, #chat-page .grid-wrapper, #about-page .grid-wrapper {
+    #product-wrapper .grid-wrapper,
+    #chat-page .grid-wrapper,
+    #about-page .grid-wrapper {
         flex-direction: column;
     }
 
@@ -1341,12 +1384,14 @@ footer nav li:nth-child(4) {
         padding: 2rem;
     }
 
-    .purchase-form .column-1-of-3, .purchase-form .column-1-of-2 {
+    .purchase-form .column-1-of-3,
+    .purchase-form .column-1-of-2 {
         width: 100%;
         margin-bottom: 0;
     }
 
-    .purchase-form .text-input-field, .select-field {
+    .purchase-form .text-input-field,
+    .select-field {
         margin-bottom: 3rem;
     }
 
@@ -1386,7 +1431,7 @@ footer nav li:nth-child(4) {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     #main-nav {
         visibility: hidden;
@@ -1397,7 +1442,7 @@ footer nav li:nth-child(4) {
         display: block;
         top: 0;
     }
-
+    
     #menuToggle {
         display: block;
         position: relative;
@@ -1406,7 +1451,7 @@ footer nav li:nth-child(4) {
         z-index: 10;
     }
 
-    #menuToggle input {
+    #menuToggle input:first-child {
         display: block;
         width: 40px;
         height: 32px;
@@ -1431,8 +1476,8 @@ footer nav li:nth-child(4) {
         z-index: 10;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-            opacity 0.55s ease;
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
     }
 
     #menuToggle span:first-child {
@@ -1521,7 +1566,6 @@ footer nav li:nth-child(4) {
     height: 8rem;
 }
     */
-
     /*
     footer .column-1-of-3:first-child li {
     text-align: left;
@@ -1544,7 +1588,6 @@ footer nav li:nth-child(4) {
     justify-content: flex-end;
 }
     */
-
     /*
     footer nav,
     footer nav ul {
