@@ -1,62 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <title>Carbon.co</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/grids.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-    </head>
+<head>
+    <title>Carbon.co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
 
-    <body>
-        <nav id="main-nav">
-            <ul>
+<body>
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <a href="index.html" class="button-nav">carbon.co</a>
+            </li>
+
+            <li>
+                <a href="gaming.html" class="button-nav">gaming</a>
+            </li>
+
+            <li>
+                <a href="work.html" class="button-nav">work</a>
+            </li>
+
+            <li>
+                <a href="home.html" class="button-nav">household</a>
+            </li>
+
+            <li>
+                <a href="chat.html" class="button-nav">chat</a>
+            </li>
+
+            <li>
+                <a href="about.html" class="button-nav">about</a>
+            </li>
+
+            <li>
+                <form id="search-icon">
+                    <input type="search">
+                </form>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <nav id="mobile-nav" role="navigation">
+        <div id="menuToggle">
+
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+
+                <li>
+                    <a href="index.html" class="button-nav">carbon.co</a>
+                </li>
                 <li>
                     <a href="gaming.html" class="button-nav">gaming</a>
                 </li>
+
                 <li>
                     <a href="work.html" class="button-nav">work</a>
                 </li>
+
                 <li>
-                    <a href="custom.html" class="button-nav">custom</a>
+                    <a href="home.html" class="button-nav">household</a>
                 </li>
+
+                <li>
+                    <a href="chat.html" class="button-nav"> chat </a>
+                </li>
+
                 <li>
                     <a href="about.html" class="button-nav">about</a>
                 </li>
                 <li>
-                    <a href="#" class="button-nav">carbon.co</a>
+                    <form id="search-mobile">
+                        <input type="text" placeholder="Search...">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="chat-page">
+        <section class="main-banner">
+            <img class="home-hero-image" src="img/homepage-banner.png" alt="close up of computer with monitor in the background">
+            <div class="banner-text">
+                <h1 class="hero-text">talk with us</h1>
+                <span class="banner-header-underline"></span>
+                <p>Have product questions? Is your computer not working? Let our award-winning support staff help you out.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>chat options</h2>
+            <span class="header-underline"></span>
+
+            <section>
+                <h2>chat options</h2>
+                <span class="header-underline"></span>
+
+                <div class="grid-content">
+                    <div class="grid-wrapper">
+                        <div class="column-1-of-3">
+                            <div class="panel-wrapper">
+                                <a class="clickable-panel" href="#">
+                                </a>
+                            <img src="img/icons/ticket.svg" alt="submit ticket">
+                            <h4>support ticket</h4>
+                            <p>for all technical or account inquiries</p>
+                        </div>
+                    </div>
+
+                    <div class="column-1-of-3">
+                        <div class="panel-wrapper">
+                            <a class="clickable-panel" href="#">
+                                </a>
+                            <img src="img/icons/speech-bubble.svg" alt="live chat">
+                            <h4>live chat</h4>
+                            <p>join live chat for all sales or product related discussion </p>
+                        </div>
+                    </div>
+
+                    <div class="column-1-of-3">
+                        <div class="panel-wrapper">
+                            <a class="clickable-panel" href="#">
+                                </a>
+                            <img src="img/icons/phone-call.svg" alt="schedule call">
+                            <h4>schedule call</h4>
+                            <p>for just about anything we can help you with! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a class="button-nav" href="about.html">About</a>
                 </li>
                 <li>
-                    <a href="search.html" class="button-nav">
-                        <img src="img/icons/magnifying-glass-icon.svg" alt="search icon">
-                    </a>
+                    <a class="button-nav" href="cart.html">View Cart</a>
+                </li>
+                <li>
+                    <a class="button-nav" href="chat.html">Contact</a>
+
+                </li>
+
+                <li>2018 carbon.co. All rights reserved.</li>
+
+                <li>
+                    <a class="button-nav" href="#">
+                            <img src="img/icons/instagram-logo.svg" alt="instagram icon">
+                        </a>
                 </li>
 
                 <li>
-                    <a href="cart.html" class="button-nav">
-                        <img src="img/icons/shopping-cart-black-shape.svg" alt="shopping cart icon">
-                    </a>
+                    <a class="button-nav" href="#">
+                            <img src="img/icons/twitter-logo-silhouette.svg" alt="twitter icon">
+                        </a>
                 </li>
                 <li>
-                    <a href="chat.html" class="button-nav">
-                        <img src="img/icons/customer-service.svg" alt="speech bubble icon">
-                    </a>
+                    <a class="button-nav" href="#">
+                            <img src="img/icons/youtube.svg" alt="youtube icon">
+                        </a>
+                </li>
+                <li>
+                    <a class="button-nav" href="#">
+                            <img src="img/icons/facebook-app-logo.svg" alt="facebook icon">
+                        </a>
                 </li>
             </ul>
         </nav>
+    </footer>
 
-        <div id="chat-wrapper">
-            <section class="main-banner">
-                <img class="home-hero-image" src="img/homepage-banner.png" alt="close up of computer with monitor in the background">
-                <div class="banner-text">
-                    <h1 class="hero-text">chat</h1>
-                    <span></span>
-                    <p>short description</p>
-                </div>
-            </section>
-        </div>
+</body>
 
-    </body>
 </html>
