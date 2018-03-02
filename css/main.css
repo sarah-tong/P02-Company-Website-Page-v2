@@ -18,20 +18,6 @@ p:not(:first-child) {
     margin-top: 1.5rem;
 }
 
-/*
-section:not([id]) {
-margin: 1em 0;
-padding: 0.5em 0;
-border-top: 0.15em solid #333;
-}
-*/
-
-/*
-section[id]:first-of-type {
-margin-top: 5rem;
-}
-*/
-
 section:not(:first-child) {
     margin-top: 6rem;
 }
@@ -987,7 +973,7 @@ COMBINED ELEMENTS -------------------
 
 
 .product-view {
-    width: 50%;
+    width: 100%;
     margin-right: 0;
 }
 
@@ -1370,47 +1356,6 @@ COMBINED ELEMENTS -------------------
 #chat-content p {
     text-align: left;
 }
-
-/*
-footer 
-
-footer {
-position: relative;
-margin-top: 3rem;
-background-color: #3057D5;
-}
-
-footer nav,
-footer nav ul {
-display: inline-flex;
-width: 100%;
-height: 4.5rem;
-}
-
-footer nav li {
-position: relative;
-font-size: 0.5rem;
-color: white;
-flex: 1 1 auto;
-text-align: center;
-align-self: flex-end;
-bottom: 1rem;
-}
-
-footer .button-nav {
-font-size: 0.5rem;
-color: white;
-display: none;
-}
-
-footer nav img {
-width: 1rem;
-}
-
-footer nav li:nth-child(4) {
-flex: 1 1 50%;
-}
-*/
 
 @media (min-width: 1281px) {
     p,
