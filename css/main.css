@@ -120,9 +120,11 @@ nav ul {
     border-bottom: 2px solid white;
 }
 
+/*
 #main-nav li:nth-child(4) .button-nav:hover:before {
     border: none;
 }
+*/
 
 nav img {
     width: 1.5rem;
@@ -752,9 +754,12 @@ COMBINED ELEMENTS -------------------
     margin: 3rem 0 1rem 0;
 }
 
-#systems h4,
-#systems p {
+#systems h4{
     text-align: center;
+}
+
+#systems p{
+    text-align: left;
 }
 
 #systems .column-1-of-3 {
@@ -842,6 +847,7 @@ COMBINED ELEMENTS -------------------
     width: 9rem;
     margin: 1rem auto 0;
 }
+
 
 #news2 {
     margin: 4rem 0;
