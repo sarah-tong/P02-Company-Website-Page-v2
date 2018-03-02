@@ -890,7 +890,7 @@ COMBINED ELEMENTS -------------------
 
 /* product listing page */
 
-.banner-comp-img {
+.banner-comp-img, #product-2 .banner-comp-img {
     position: absolute;
     right: 0;
     top: 0;
@@ -971,11 +971,17 @@ COMBINED ELEMENTS -------------------
 
 /* product page */
 
+#product-2 .banner-comp-img {
+    width: 35%;
+    margin: 9rem 6rem 0 0;
+    z-index: 0;
+}
+
 #product-overview .content:first-of-type {
     margin-bottom: 4rem;
 }
 
-#product-wrapper #product-overview .column-1-of-2:first-child {
+.product-wrapper #product-overview .column-1-of-2:first-child {
     margin-right: 2rem;
 }
 
@@ -1196,22 +1202,22 @@ flex: 0 1 auto;
     margin-bottom: 2rem;
 }
 
-#product-wrapper .rating {
+.product-wrapper .rating {
     unicode-bidi: bidi-override;
     direction: rtl;
     text-align: left;
     margin-bottom: 2rem;
 }
 
-#product-wrapper .rating > span {
+.product-wrapper .rating > span {
     display: inline-block;
     position: relative;
     font-size: 2rem;
     padding: 0 0.5rem;
 }
 
-#product-wrapper .rating > span:hover:before,
-#product-wrapper .rating > span:hover ~ span:before {
+.product-wrapper .rating > span:hover:before,
+.product-wrapper .rating > span:hover ~ span:before {
     content: "\2605";
     position: absolute;
 }
@@ -1454,8 +1460,8 @@ flex: 1 1 50%;
         bottom: 14%;
     }
 
-    .main-banner .banner-text p {
-        padding-right: 6rem;
+    .main-banner .banner-text p{
+        padding-right: 7rem;
     }
 
     #gaming-wrapper .grid-content,
@@ -1474,7 +1480,7 @@ flex: 1 1 50%;
     #carbon-difference .grid-wrapper,
     #systems .grid-wrapper,
     .purchase-form .grid-wrapper,
-    #product-wrapper .grid-wrapper,
+    .product-wrapper .grid-wrapper,
     #chat-page .grid-wrapper,
     #about-page .grid-wrapper {
         flex-direction: column;
@@ -1514,7 +1520,7 @@ flex: 1 1 50%;
         margin-right: 1rem;
     }
 
-    #product-wrapper .smaller-product-views {
+    .product-wrapper .smaller-product-views {
         margin-bottom: 3rem;
     }
 
@@ -1574,6 +1580,15 @@ flex: 1 1 50%;
 }
 
 @media (max-width: 800px) {
+
+    .banner-comp-img {
+        margin: 5rem 2rem 0 0;
+    }
+    
+    #product-2 .banner-comp-img {
+        width: 40%;
+        margin: 5rem 4rem 0 0;
+    }
 
     #main-nav {
         visibility: hidden;
@@ -1686,7 +1701,7 @@ flex: 1 1 50%;
 
     .main-banner .banner-text p {
         margin-top: 1rem;
-        padding-right: 15rem;
+        padding-right: 12rem;
     }
 
     .hero-bottom-text {
@@ -1711,6 +1726,18 @@ flex: 1 1 50%;
     p,
     ul {
         font-size: 0.75rem;
+    }
+
+    .main-banner .banner-text p {
+        padding-right: 10rem;
+    }
+
+    .banner-comp-img {
+        margin: 4rem 0 0 0;
+    }
+    
+    #product-2 .banner-comp-img {
+        margin: 4rem 1rem 0 0;
     }
 
     #gaming-wrapper .grid-wrapper,
@@ -1865,6 +1892,11 @@ footer a:hover {
     .hero-bottom-text {
         bottom: 4%;
     }
+
+    .main-banner .banner-text p {
+        padding-right: 7rem;
+    }
+
 }
 
 @media (max-width: 582px) {
@@ -1880,7 +1912,12 @@ footer a:hover {
     }
 
     .main-banner .banner-text {
-        margin: 0 2.5rem;
+        left: 11.5rem;
+        margin: 0 0rem;
+    }
+
+    .main-banner .banner-text p {
+        padding-right: 1.5rem;
     }
 
     .banner-header-underline {
@@ -1897,10 +1934,15 @@ footer a:hover {
 
     .banner-comp-img {
         width: 21rem;
-        margin-right: 0;
-        left: 0;
+        left: -3rem;
         right: 0;
-        margin: 5rem auto;
+        margin: 5rem 0;
+    }
+    
+    #product-2 .banner-comp-img {
+        width: 15rem;
+        left: 0rem;
+        margin: 8rem 0;
     }
 
     section .content,
@@ -1918,7 +1960,7 @@ footer a:hover {
         margin-top: 4rem;
     }
 
-    #product-wrapper .rating > span {
+    .product-wrapper .rating > span {
         font-size: 1.5rem;
     }
 }
