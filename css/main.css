@@ -124,7 +124,7 @@ nav ul {
 
 /*
 #main-nav li:nth-child(4) .button-nav:hover:before {
-    border: none;
+border: none;
 }
 */
 
@@ -1584,7 +1584,7 @@ flex: 1 1 50%;
     .banner-comp-img {
         margin: 5rem 2rem 0 0;
     }
-    
+
     #product-2 .banner-comp-img {
         width: 40%;
         margin: 5rem 4rem 0 0;
@@ -1638,8 +1638,8 @@ flex: 1 1 50%;
         z-index: 10;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
     }
 
     #menuToggle span:first-child {
@@ -1723,6 +1723,13 @@ flex: 1 1 50%;
         font-size: 2rem;
     }
 
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2.25rem;
+    }
+    
+    h3
+
     p,
     ul {
         font-size: 0.75rem;
@@ -1735,7 +1742,7 @@ flex: 1 1 50%;
     .banner-comp-img {
         margin: 4rem 0 0 0;
     }
-    
+
     #product-2 .banner-comp-img {
         margin: 4rem 1rem 0 0;
     }
@@ -1938,7 +1945,7 @@ footer a:hover {
         right: 0;
         margin: 5rem 0;
     }
-    
+
     #product-2 .banner-comp-img {
         width: 15rem;
         left: 0rem;
