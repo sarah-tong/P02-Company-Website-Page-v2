@@ -543,6 +543,7 @@ COMBINED ELEMENTS -------------------
     text-shadow: 2px 2px #102c34;
 }
 
+
 .product-detail h3 {
     top: 0rem;
 }
@@ -924,9 +925,13 @@ COMBINED ELEMENTS -------------------
     padding: 0 2rem 4rem;
 }
 
-.product-listing h4,
-.product-listing p {
+.product-listing h4 {
     text-align: center;
+    margin: 0;
+}
+
+.product-listing p {
+    text-align: left;
     margin: 0;
 }
 
