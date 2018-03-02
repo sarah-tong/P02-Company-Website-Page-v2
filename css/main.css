@@ -1728,7 +1728,9 @@ flex: 1 1 50%;
         margin-bottom: 2.25rem;
     }
     
-    h3
+    h3 {
+        font-size: 1.75rem;
+    }
 
     p,
     ul {
