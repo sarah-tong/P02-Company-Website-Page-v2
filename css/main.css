@@ -965,7 +965,7 @@ COMBINED ELEMENTS -------------------
 
 #product-2 .banner-comp-img {
     width: 35%;
-    margin: 10.5rem 10.5rem 0 0;
+    margin: 11rem 10.5rem 0 0;
     z-index: 0;
 }
 
@@ -1928,7 +1928,24 @@ footer a:hover {
     }
 }
 
-@media (max-width:436px) {
+@media (max-width: 436px) {
+
+    .banner-comp-img {
+        max-height: 100vw;
+        width: auto;
+        top: 0;
+        bottom: -17rem;
+        margin: auto auto;
+    }
+
+    #product-2 .banner-comp-img {
+        max-height: 80vw;
+        width: auto;
+        top: 0;
+        bottom: -17rem;
+        margin: auto auto;
+    }
+
     .testimonial .cta-button:nth-child(2) {
         padding: 0;
         line-height: 1.1;
@@ -1936,8 +1953,9 @@ footer a:hover {
 }
 
 @media (max-width: 396px) {
-    .main-banner .banner-text {
-        top: 28%;
+
+    .banner-comp-img, #product-2 .banner-comp-img  {
+        bottom: -20rem;
     }
 
     #form-expiry,
@@ -1948,7 +1966,12 @@ footer a:hover {
 }
 
 @media (max-width: 303px) {
-    .main-banner .banner-text {
+
+    .main-banner .banner-text, #product-2 .banner-comp-img {
         top: 25%;
+    }
+
+    .banner-comp-img {
+        bottom: -23rem;
     }
 }
