@@ -44,21 +44,4 @@ window.onload = function () {
     calibre04.addEventListener("click", function () {
         calibreMain.src = "img/computer-images/calibre_04.png";
     });
-
-    
-//    triton01.addEventListener("click", function () {
-//        tritonMain.src = "img/gifs/product2.gif";
-//    });
-//
-//    triton02.addEventListener("click", function () {
-//        tritonMain.src = "img/computer-images/triton_02.png";
-//    });
-//
-//    triton03.addEventListener("click", function () {
-//        tritonMain.src = "img/computer-images/triton_03.png";
-//    });
-//
-//    triton04.addEventListener("click", function () {
-//        tritonMain.src = "img/computer-images/triton_04.png";
-//    });
 };
