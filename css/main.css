@@ -108,12 +108,6 @@ nav ul {
     border-bottom: 2px solid white;
 }
 
-/*
-#main-nav li:nth-child(4) .button-nav:hover:before {
-border: none;
-}
-*/
-
 nav img {
     width: 1.5rem;
 }
@@ -154,7 +148,6 @@ input[type=search]:focus {
     width: 130px;
     background-color: #fff;
     border-color: #3057D5;
-
     box-shadow: 0 0 5px rgba(109, 207, 246, .5);
 }
 
@@ -487,6 +480,39 @@ COMBINED ELEMENTS -------------------
     color: #3057D5;
 }
 
+.payment-nav li a {
+    color: #3057D5;
+    font-weight: 300;
+}
+
+.payment-nav input[type=search] {
+    background: transparent url(../img/icons/magnifying-glass-icon-vividblue.svg) no-repeat 9px center;
+    background-size: 12%;
+    background-position: center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+
+    border-radius: 10em;
+    transition: all .5s;
+}
+
+.payment-nav input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #3057D5;
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+.payment-nav li a:hover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -0.25rem;
+    border-bottom: 2px solid #3057D5;
+}
+
 /* Styling for product listing */
 
 .product-listing {
@@ -531,31 +557,6 @@ COMBINED ELEMENTS -------------------
 .product-detail p {
     top: 2.5rem;
 }
-
-.payment-nav li a {
-    color: #3057D5;
-}
-
-.payment-nav input[type=search] {
-    background: transparent url(../img/icons/magnifying-glass-icon-vividblue.svg) no-repeat 9px center;
-    background-size: 12%;
-    background-position: center;
-    border: solid 1px #ccc;
-    padding: 9px 10px 9px 32px;
-    width: 55px;
-
-    border-radius: 10em;
-    transition: all .5s;
-}
-
-.payment-nav input[type=search]:focus {
-    width: 130px;
-    background-color: #fff;
-    border-color: #3057D5;
-
-    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
-}
-
 
 /* Website grid */
 
@@ -831,41 +832,12 @@ COMBINED ELEMENTS -------------------
     margin: 1rem auto 0;
 }
 
-
 #news2 {
     margin: 4rem 0;
 }
 
-#social-media .grid-wrapper {
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-#social-media .column-1-of-2 {
-    display: flex;
-    flex: 1 1 50%;
-}
-
-.social-media-img-wrapper {
-    display: block;
-    position: relative;
-    max-width: 11vw;
-    max-height: 11vw;
-    overflow: hidden;
-}
-
 .column-1-of-2 .social-media-img-wrapper:first-child {
     margin-right: 1rem;
-}
-
-.social-media-img-wrapper img {
-    height: 100%;
-}
-
-.social-media-img-center-wrapper {
-    max-width: 22vw;
-    max-height: 22vw;
-    overflow: hidden;
 }
 
 /* product listing page */
@@ -1363,6 +1335,70 @@ COMBINED ELEMENTS -------------------
     text-align: left;
 }
 
+
+/* footer */
+
+footer {
+    background-color: #3057D5;
+    color: white;
+    height: 100%;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    margin-top: 4rem;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+#footer-wrapper p {
+    text-align: left;
+}
+
+#footer-wrapper h4 {
+    font-size: 1rem;
+    color: white;
+}
+
+#footer-wrapper ul {
+    color: black;
+    height: 100%;
+    list-style: none;
+    padding-left: 0;
+}
+
+#footer-wrapper li {
+    padding-left: 0;
+}
+
+#footer-wrapper div {
+    margin: 1rem 2rem;
+}
+
+
+footer a {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    color: #899da3;
+    font-weight: 700;
+}
+
+
+/* media queries */
+
 @media (min-width: 1281px) {
     p,
     .in-text-link,
@@ -1628,6 +1664,14 @@ COMBINED ELEMENTS -------------------
     #menuToggle input:checked ~ ul {
         transform: none;
     }
+
+    .payment-nav #menuToggle span {
+        background: #3057D5;
+    } 
+
+    .payment-nav #menuToggle li a {
+        color: white;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1703,130 +1747,7 @@ COMBINED ELEMENTS -------------------
     #home-wrapper .column-1-of-2:first-child {
         margin-right: 0;
     }
-
-    /*
-    footer {
-    height: 8rem;
 }
-    */
-    /*
-    footer .column-1-of-3:first-child li {
-    text-align: left;
-    padding-bottom: 1rem;
-    top: 0;
-}
-
-    footer .column-1-of-3:nth-child(3) {
-    text-align: right;
-}
-
-    footer .column-1-of-3:nth-child(3) li {
-    text-align: right;
-    top: 0;
-    display: inline-block;
-    margin-left: 2rem;
-}
-
-    footer .column-1-of-3:nth-child(2) {
-    justify-content: flex-end;
-}
-    */
-    /*
-    footer nav,
-    footer nav ul {
-    display: block;
-    height: 100%;
-    width: auto;
-}
-
-    footer li:first-child, footer li:nth-child(2), footer li:nth-child(3) {
-    text-align: left;
-    width: fit-content;
-    top: 1rem;
-    padding-bottom: 1rem;
-}
-
-    footer li:nth-child(5), footer li:nth-child(6), footer li:nth-child(7), footer li:nth-child(8) {
-    display: inline-flex;
-    text-align: right;
-}
-
-    footer nav ul li:nth-child(4) {
-    display: block;
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-}
-
-    footer li:nth-child(4) a {
-    align-self: flex-end;
-}
-    */
-}
-
-
-
-/*josh footer attempt*/
-
-footer {
-    background-color: #3057D5;
-    color: white;
-    height: 100%;
-}
-
-footer p {
-    text-align: center;
-    font-size: 0.8rem;
-}
-
-#footer-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    margin-top: 4rem;
-    justify-content: center;
-    padding-top: 2rem;
-}
-
-#footer-wrapper p {
-    text-align: left;
-}
-
-#footer-wrapper h4 {
-    font-size: 1rem;
-    color: white;
-}
-
-#footer-wrapper ul {
-    color: black;
-    height: 100%;
-    list-style: none;
-    padding-left: 0;
-}
-
-#footer-wrapper li {
-    padding-left: 0;
-}
-
-#footer-wrapper div {
-    margin: 1rem 2rem;
-}
-
-
-footer a {
-    font-size: 0.75rem;
-    text-decoration: none;
-    color: white;
-    transition: color 0.5s;
-}
-
-footer a:hover {
-    color: #899da3;
-    font-weight: 700;
-}
-
-/*MEDIA QUERIES */
 
 @media (max-width: 620px) {
     .hero-bottom-text {
