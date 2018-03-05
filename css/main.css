@@ -1585,18 +1585,18 @@ footer a:hover {
     .menuToggle {
         display: block;
         position: relative;
-        top: 50px;
-        left: 50px;
+        top: 3.125rem;
+        left: 3.125rem;
         z-index: 10;
     }
 
     .menuToggle input:first-child {
         display: block;
-        width: 40px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         position: absolute;
-        top: -7px;
-        left: -5px;
+        top: -0.4375rem;
+        left: -0.3125rem;
         cursor: pointer;
         opacity: 0;
         /*         hide this */
@@ -1651,10 +1651,10 @@ footer a:hover {
 
     .menu {
         position: absolute;
-        width: 300px;
-        margin: -100px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
+        width: 18.75rem;
+        margin: -6.25rem 0 0 -3.125rem;
+        padding: 3.125rem;
+        padding-top: 7.8125rem;
         background: #3057D5;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
@@ -1665,8 +1665,8 @@ footer a:hover {
     }
 
     .menu li {
-        padding: 10px 0;
-        font-size: 22px;
+        padding: 0.625rem 0;
+        font-size: 1.375rem;
     }
 
     .menuToggle input:checked ~ ul {

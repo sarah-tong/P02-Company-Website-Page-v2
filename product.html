@@ -50,7 +50,7 @@
         <nav class="mobile-nav">
             <div class="menuToggle">
 
-                <input type="checkbox" />
+                <input class="hidden" aria-hidden="true" aria-controls="menu" type="checkbox"/>
 
                 <span></span>
                 <span></span>
@@ -119,10 +119,10 @@
                         <div class="column-1-of-2">
                             <img id ="calibre-main" class="product-view" src="img/gifs/product.gif" alt="computer view 1">
                             <div class="smaller-product-views">
-                                <img id="calibre-01" src="img/gifs/product.gif" alt="smaller product gif 1">
-                                <img id="calibre-02" src="img/computer-images/calibre_02.png" alt="smaller product view 2">
-                                <img id="calibre-03" src="img/computer-images/calibre_03.png" alt="smaller product view 3">
-                                <img id="calibre-04" src="img/computer-images/calibre_04.png" alt="smaller product view 4">
+                                <img id="calibre-01" src="img/gifs/product.gif" alt="smaller product gif 1" aria-controls="calibre-main">
+                                <img id="calibre-02" src="img/computer-images/calibre_02.png" alt="smaller product view 2" aria-controls="calibre-main">
+                                <img id="calibre-03" src="img/computer-images/calibre_03.png" alt="smaller product view 3" aria-controls="calibre-main">
+                                <img id="calibre-04" src="img/computer-images/calibre_04.png" alt="smaller product view 4" aria-controls="calibre-main">
                             </div>
                         </div>
 
@@ -137,8 +137,8 @@
                             </div>
 
                             <div class="accordion">
-                                <button class="product-info-accordion">Specifications</button>
-                                <div class="product-info-panel">
+                                <button class="product-info-accordion" aria-expanded="false" aria-controls="product-1-panel-1">Specifications</button>
+                                <div class="product-info-panel" id="product-1-panel-1">
                                     <p>
                                         Case: Corsair Spec-04
                                     </p>
@@ -156,8 +156,8 @@
                                     </p>
                                 </div>
 
-                                <button class="product-info-accordion">Performance</button>
-                                <div class="product-info-panel">
+                                <button class="product-info-accordion" aria-expanded="false" aria-controls="product-1-panel-2">Performance</button>
+                                <div class="product-info-panel" id="product-1-panel-2">
                                     <p>
                                         Overwatch: 60 FPS
                                     </p>
@@ -172,8 +172,8 @@
                                     </p>
                                 </div>
 
-                                <button class="product-info-accordion">Warranty</button>
-                                <div class="product-info-panel">
+                                <button class="product-info-accordion" aria-expanded="false" aria-controls="product-1-panel-3">Warranty</button>
+                                <div class="product-info-panel" id="product-1-panel-3">
                                     <p>The Warranty Period for PCs purchased from Carbon Computers is 180 days from the date of purchase.</p>
                                 </div>
                             </div>
