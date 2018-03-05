@@ -1435,12 +1435,20 @@ footer a:hover {
     .main-banner .banner-text p {
         padding-right: 5.5rem;
     }
+
+    #homepage-wrapper .banner-text p, #about-page .banner-text p, #chat-page .banner-text p {
+        padding-right: 0rem;
+    }
 }
 
 @media (max-width: 873px) {
     .main-banner .banner-text p {
         top: 30%;
         padding-right: 12rem;
+    }
+
+    #homepage-wrapper .banner-text p, #about-page .banner-text p, #chat-page .banner-text p {
+        padding-right: 0rem;
     }
 
     #carbon-difference .grid-wrapper,
@@ -1538,7 +1546,6 @@ footer a:hover {
         display: inline-block;
         max-width: 48%;
     }
-
 }
 
 @media (max-width: 800px) {
@@ -1550,6 +1557,10 @@ footer a:hover {
     .main-banner .banner-text p {
         margin-top: 1rem;
         padding-right: 12rem;
+    }
+
+    #homepage-wrapper .banner-text p, #about-page .banner-text p, #chat-page .banner-text p {
+        padding-right: 0rem;
     }
 
     .banner-comp-img {
@@ -1693,6 +1704,12 @@ footer a:hover {
     }
 }
 
+@media (max-width: 700px) {
+    #homepage-wrapper .banner-text, #about-page .banner-text, #chat-page .banner-text {
+        margin: 0 6rem 0 7rem;
+    }
+}
+
 @media (max-width: 687px) {
     h1 {
         font-size: 2rem;
@@ -1765,6 +1782,10 @@ footer a:hover {
         height: 32rem;
     }
 
+    #homepage-wrapper .main-banner, #about-page .main-banner, #chat-page .main-banner {
+        height: 22rem;
+    }
+
     .home-hero-image {
         display: block;
         max-height: 100%;
@@ -1775,10 +1796,14 @@ footer a:hover {
     .main-banner .banner-text {
         left: 3rem;
         top: 7rem;
-        margin: 0 0rem;
+        margin: 0 0;
     }
 
-    .main-banner .banner-text p {
+    #homepage-wrapper .banner-text, #about-page .banner-text, #chat-page .banner-text {
+        margin: 0 0;
+    }
+
+    .main-banner .banner-text p, #homepage-wrapper .banner-text p, #about-page .banner-text p, #chat-page .banner-text p {
         padding-right: 3rem;
     }
 
@@ -1883,6 +1908,17 @@ footer a:hover {
     #form-year {
         display: block;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 337px) {
+    
+    #homepage-wrapper .banner-text, #about-page .banner-text, #chat-page .banner-text {
+        top: 5.5rem;
+    }
+    
+    .jump-down-button {
+        bottom: 1%;
     }
 }
 
