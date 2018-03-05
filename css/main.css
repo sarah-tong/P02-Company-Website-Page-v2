@@ -902,7 +902,6 @@ COMBINED ELEMENTS -------------------
 #work-wrapper .panel-wrapper,
 #home-wrapper .panel-wrapper {
     border: 1px solid #eaf1f7;
-    padding: 0 2rem 4rem;
 }
 
 .product-listing h4 {
@@ -913,6 +912,19 @@ COMBINED ELEMENTS -------------------
 .product-listing p {
     text-align: left;
     margin: 0;
+    padding: 0 2rem 0;
+}
+
+.product-listing p:first-of-type {
+    margin: 1rem 0;
+}
+
+.product-listing p:last-of-type {
+    margin: 2rem 0 4rem;
+}
+
+.product-listing p:not(:nth-of-type(2)) {
+    text-align: center;
 }
 
 .rating {
@@ -953,7 +965,7 @@ COMBINED ELEMENTS -------------------
 
 #product-2 .banner-comp-img {
     width: 35%;
-    margin: 9rem 6rem 0 0;
+    margin: 10.5rem 10.5rem 0 0;
     z-index: 0;
 }
 
@@ -1364,14 +1376,28 @@ COMBINED ELEMENTS -------------------
         bottom: 14%;
     }
 
+    .banner-comp-img {
+        margin: 7rem 2rem 0 0;
+    }
+
+    #product-2 .banner-comp-img {
+        margin: 11rem 8rem 0 0;
+    }
+
     .main-banner .banner-text p{
-        padding-right: 7rem;
+        padding-right: 3rem;
     }
 
     #gaming-wrapper .grid-content,
     #work-wrapper .grid-content,
     #home-wrapper .grid-content {
         margin: 3rem 7rem 0;
+    }
+}
+
+@media (max-width: 962px) {
+    .main-banner .banner-text p {
+        padding-right: 5.5rem;
     }
 }
 
@@ -1481,13 +1507,21 @@ COMBINED ELEMENTS -------------------
 
 @media (max-width: 800px) {
 
+    .main-banner .banner-text {
+        top: 27%;
+    }
+
+    .main-banner .banner-text p {
+        margin-top: 1rem;
+        padding-right: 12rem;
+    }
+
     .banner-comp-img {
         margin: 5rem 2rem 0 0;
     }
 
     #product-2 .banner-comp-img {
-        width: 40%;
-        margin: 5rem 4rem 0 0;
+        margin: 7rem 6rem 0 0;
     }
 
     #main-nav {
@@ -1526,7 +1560,7 @@ COMBINED ELEMENTS -------------------
         z-index: 12;
         /* and place it over the hamburger */
     }
-    
+
     #menuToggle input:last-child {
         opacity: 1;
         top: 0;
@@ -1601,15 +1635,6 @@ COMBINED ELEMENTS -------------------
         margin: 0 0 1rem 0;
     }
 
-    .main-banner .banner-text {
-        top: 27%;
-    }
-
-    .main-banner .banner-text p {
-        margin-top: 1rem;
-        padding-right: 12rem;
-    }
-
     .hero-bottom-text {
         bottom: 9%;
     }
@@ -1633,7 +1658,7 @@ COMBINED ELEMENTS -------------------
         font-size: 2rem;
         margin-bottom: 2.25rem;
     }
-    
+
     h3 {
         font-size: 1.75rem;
     }
@@ -1652,7 +1677,7 @@ COMBINED ELEMENTS -------------------
     }
 
     #product-2 .banner-comp-img {
-        margin: 4rem 1rem 0 0;
+        margin: 6.5rem 4rem 0 0;
     }
 
     #gaming-wrapper .grid-wrapper,
@@ -1816,7 +1841,7 @@ footer a:hover {
 
 @media (max-width: 582px) {
     .main-banner {
-        height: 22rem;
+        height: 32rem;
     }
 
     .home-hero-image {
@@ -1827,12 +1852,13 @@ footer a:hover {
     }
 
     .main-banner .banner-text {
-        left: 11.5rem;
+        left: 3rem;
+        top: 7rem;
         margin: 0 0rem;
     }
 
     .main-banner .banner-text p {
-        padding-right: 1.5rem;
+        padding-right: 3rem;
     }
 
     .banner-header-underline {
@@ -1848,16 +1874,23 @@ footer a:hover {
     }
 
     .banner-comp-img {
-        width: 21rem;
-        left: -3rem;
+        position: absolute;
+        width: 25rem;
+        left: 0;
         right: 0;
-        margin: 5rem 0;
+        top: 12rem;
+        display: block;
+        margin: 0 auto;
     }
 
     #product-2 .banner-comp-img {
-        width: 15rem;
-        left: 0rem;
-        margin: 8rem 0;
+        position: absolute;
+        width: 18rem;
+        left: 0;
+        right: 0;
+        top: 14.5rem;
+        display: block;
+        margin: 0 auto;
     }
 
     section .content,
